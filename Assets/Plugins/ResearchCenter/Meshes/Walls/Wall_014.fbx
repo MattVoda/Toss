@@ -1,0 +1,715 @@
+; FBX 7.4.0 project file
+; Copyright (C) 1997-2015 Autodesk Inc. and/or its licensors.
+; All rights reserved.
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7400
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2016
+		Month: 10
+		Day: 21
+		Hour: 21
+		Minute: 51
+		Second: 10
+		Millisecond: 848
+	}
+	Creator: "FBX SDK/FBX Plugins version 2017.0.1"
+	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
+		Type: "UserData"
+		Version: 100
+		MetaData:  {
+			Version: 100
+			Title: ""
+			Subject: ""
+			Author: ""
+			Keywords: ""
+			Revision: ""
+			Comment: ""
+		}
+		Properties70:  {
+			P: "DocumentUrl", "KString", "Url", "", "D:\[Model Store]\Enviroments\1\Wall_014.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "D:\[Model Store]\Enviroments\1\Wall_014.fbx"
+			P: "Original", "Compound", "", ""
+			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
+			P: "Original|ApplicationName", "KString", "", "", "Maya LT"
+			P: "Original|ApplicationVersion", "KString", "", "", "2017"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "21/10/2016 16:51:10.847"
+			P: "Original|FileName", "KString", "", "", "D:\[Model Store]\Enviroments\1\Wall_014.fbx"
+			P: "LastSaved", "Compound", "", ""
+			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
+			P: "LastSaved|ApplicationName", "KString", "", "", "Maya LT"
+			P: "LastSaved|ApplicationVersion", "KString", "", "", "2017"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "21/10/2016 16:51:10.847"
+			P: "Original|ApplicationActiveProject", "KString", "", "", "D:\[Model Store]\Enviroments\1\SPP\Door_01\Textures\Unreal\2K"
+			P: "Original|ApplicationNativeFile", "KString", "", "", "D:\[Model Store]\Enviroments\1\Environment_01_3.mlt"
+		}
+	}
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",1
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",6
+		P: "TimeProtocol", "enum", "", "",2
+		P: "SnapOnFrameMode", "enum", "", "",0
+		P: "TimeSpanStart", "KTime", "Time", "",1539538600
+		P: "TimeSpanStop", "KTime", "Time", "",92372316000
+		P: "CustomFrameRate", "double", "Number", "",-1
+		P: "TimeMarker", "Compound", "", ""
+		P: "CurrentTimeMarker", "int", "Integer", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 1821752240032, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 16
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "AnimationStack" {
+		Count: 1
+		PropertyTemplate: "FbxAnimStack" {
+			Properties70:  {
+				P: "Description", "KString", "", "", ""
+				P: "LocalStart", "KTime", "Time", "",0
+				P: "LocalStop", "KTime", "Time", "",0
+				P: "ReferenceStart", "KTime", "Time", "",0
+				P: "ReferenceStop", "KTime", "Time", "",0
+			}
+		}
+	}
+	ObjectType: "AnimationLayer" {
+		Count: 1
+		PropertyTemplate: "FbxAnimLayer" {
+			Properties70:  {
+				P: "Weight", "Number", "", "A",100
+				P: "Mute", "bool", "", "",0
+				P: "Solo", "bool", "", "",0
+				P: "Lock", "bool", "", "",0
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BlendMode", "enum", "", "",0
+				P: "RotationAccumulationMode", "enum", "", "",0
+				P: "ScaleAccumulationMode", "enum", "", "",0
+				P: "BlendModeBypass", "ULongLong", "", "",0
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 1
+		PropertyTemplate: "FbxSurfaceMaterial" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Unknown"
+				P: "MultiLayer", "bool", "", "",0
+			}
+		}
+	}
+	ObjectType: "Implementation" {
+		Count: 1
+		PropertyTemplate: "FbxImplementation" {
+			Properties70:  {
+				P: "ShaderLanguage", "KString", "", "", "MentalRaySL"
+				P: "ShaderLanguageVersion", "KString", "", "", ""
+				P: "RenderAPI", "KString", "", "", "MentalRay"
+				P: "RenderAPIVersion", "KString", "", "", ""
+				P: "RootBindingName", "KString", "", "", ""
+				P: "Constants", "Compound", "", ""
+			}
+		}
+	}
+	ObjectType: "BindingTable" {
+		Count: 1
+		PropertyTemplate: "FbxBindingTable" {
+			Properties70:  {
+				P: "TargetName", "KString", "", "", ""
+				P: "TargetType", "KString", "", "", ""
+				P: "CodeAbsoluteURL", "KString", "XRefUrl", "", ""
+				P: "CodeRelativeURL", "KString", "XRefUrl", "", ""
+				P: "CodeTAG", "KString", "", "", "shader"
+				P: "DescAbsoluteURL", "KString", "XRefUrl", "", ""
+				P: "DescRelativeURL", "KString", "XRefUrl", "", ""
+				P: "DescTAG", "KString", "", "", "shader"
+			}
+		}
+	}
+	ObjectType: "Texture" {
+		Count: 4
+		PropertyTemplate: "FbxFileTexture" {
+			Properties70:  {
+				P: "TextureTypeUse", "enum", "", "",0
+				P: "Texture alpha", "Number", "", "A",1
+				P: "CurrentMappingType", "enum", "", "",0
+				P: "WrapModeU", "enum", "", "",0
+				P: "WrapModeV", "enum", "", "",0
+				P: "UVSwap", "bool", "", "",0
+				P: "PremultiplyAlpha", "bool", "", "",1
+				P: "Translation", "Vector", "", "A",0,0,0
+				P: "Rotation", "Vector", "", "A",0,0,0
+				P: "Scaling", "Vector", "", "A",1,1,1
+				P: "TextureRotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TextureScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "CurrentTextureBlendMode", "enum", "", "",1
+				P: "UVSet", "KString", "", "", "default"
+				P: "UseMaterial", "bool", "", "",0
+				P: "UseMipMap", "bool", "", "",0
+			}
+		}
+	}
+	ObjectType: "Model" {
+		Count: 1
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "TranslationMin", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMax", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationMinX", "bool", "", "",0
+				P: "TranslationMinY", "bool", "", "",0
+				P: "TranslationMinZ", "bool", "", "",0
+				P: "TranslationMaxX", "bool", "", "",0
+				P: "TranslationMaxY", "bool", "", "",0
+				P: "TranslationMaxZ", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "RotationSpaceForLimitOnly", "bool", "", "",0
+				P: "RotationStiffnessX", "double", "Number", "",0
+				P: "RotationStiffnessY", "double", "Number", "",0
+				P: "RotationStiffnessZ", "double", "Number", "",0
+				P: "AxisLen", "double", "Number", "",10
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "RotationActive", "bool", "", "",0
+				P: "RotationMin", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMax", "Vector3D", "Vector", "",0,0,0
+				P: "RotationMinX", "bool", "", "",0
+				P: "RotationMinY", "bool", "", "",0
+				P: "RotationMinZ", "bool", "", "",0
+				P: "RotationMaxX", "bool", "", "",0
+				P: "RotationMaxY", "bool", "", "",0
+				P: "RotationMaxZ", "bool", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "ScalingMin", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingMax", "Vector3D", "Vector", "",1,1,1
+				P: "ScalingMinX", "bool", "", "",0
+				P: "ScalingMinY", "bool", "", "",0
+				P: "ScalingMinZ", "bool", "", "",0
+				P: "ScalingMaxX", "bool", "", "",0
+				P: "ScalingMaxY", "bool", "", "",0
+				P: "ScalingMaxZ", "bool", "", "",0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "MinDampRangeX", "double", "Number", "",0
+				P: "MinDampRangeY", "double", "Number", "",0
+				P: "MinDampRangeZ", "double", "Number", "",0
+				P: "MaxDampRangeX", "double", "Number", "",0
+				P: "MaxDampRangeY", "double", "Number", "",0
+				P: "MaxDampRangeZ", "double", "Number", "",0
+				P: "MinDampStrengthX", "double", "Number", "",0
+				P: "MinDampStrengthY", "double", "Number", "",0
+				P: "MinDampStrengthZ", "double", "Number", "",0
+				P: "MaxDampStrengthX", "double", "Number", "",0
+				P: "MaxDampStrengthY", "double", "Number", "",0
+				P: "MaxDampStrengthZ", "double", "Number", "",0
+				P: "PreferedAngleX", "double", "Number", "",0
+				P: "PreferedAngleY", "double", "Number", "",0
+				P: "PreferedAngleZ", "double", "Number", "",0
+				P: "LookAtProperty", "object", "", ""
+				P: "UpVectorProperty", "object", "", ""
+				P: "Show", "bool", "", "",1
+				P: "NegativePercentShapeSupport", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "Video" {
+		Count: 4
+		PropertyTemplate: "FbxVideo" {
+			Properties70:  {
+				P: "ImageSequence", "bool", "", "",0
+				P: "ImageSequenceOffset", "int", "Integer", "",0
+				P: "FrameRate", "double", "Number", "",0
+				P: "LastFrame", "int", "Integer", "",0
+				P: "Width", "int", "Integer", "",0
+				P: "Height", "int", "Integer", "",0
+				P: "Path", "KString", "XRefUrl", "", ""
+				P: "StartFrame", "int", "Integer", "",0
+				P: "StopFrame", "int", "Integer", "",0
+				P: "PlaySpeed", "double", "Number", "",0
+				P: "Offset", "KTime", "Time", "",0
+				P: "InterlaceMode", "enum", "", "",0
+				P: "FreeRunning", "bool", "", "",0
+				P: "Loop", "bool", "", "",0
+				P: "AccessMode", "enum", "", "",0
+			}
+		}
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Geometry: 1821175931520, "Geometry::", "Mesh" {
+		Vertices: *72 {
+			a: 545.346069335938,1.76026088236775e-012,6047.673828125,559.523742675781,1.69437315740428e-012,6061.7744140625,545.346069335938,800,6047.673828125,559.523742675781,800,6061.7744140625,547.702514648438,800,6045.30078125,561.785827636719,800,6059.49658203125,547.702514648438,-1.70750718252177e-012,6045.30078125,561.785827636719,-1.63427821622819e-012,6059.49658203125,400,0,6400,420,1.2391397151001e-029,6400,400,800,6400,420,800,6400,400.366943359375,800,6398.0849609375,420.352294921875,800,6398.1611328125,400.366943359375,3.76388910400681e-016,6398.0849609375,420.352294921875,7.16585532333283e-016,6398.1611328125,900,-1.36305374679542e-029,5900,900,-1.36305374679542e-029,5920,900,800,5900,900,800,5920,902,800,5900,902,800,5920,902,-1.36305374679542e-029,5900,902,-1.36305374679542e-029,5920
+		} 
+		PolygonVertexIndex: *48 {
+			a: 0,1,3,-3,4,5,7,-7,1,7,5,-4,6,0,2,-5,8,9,11,-11,12,13,15,-15,9,15,13,-12,14,8,10,-13,16,17,19,-19,20,21,23,-23,17,23,21,-20,22,16,18,-21
+		} 
+		Edges: *36 {
+			a: 0,2,4,6,3,1,14,10,7,5,12,8,16,18,20,22,19,17,30,26,23,21,28,24,32,34,36,38,35,33,46,42,39,37,44,40
+		} 
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 102
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *144 {
+				a: -0.705177545547485,0,0.70903068780899,-0.705177545547485,0,0.70903068780899,-0.705177545547485,0,0.70903068780899,-0.705177545547485,0,0.70903068780899,0.7099249958992,0,-0.704277276992798,0.7099249958992,0,-0.704277276992798,0.7099249958992,0,-0.704277276992798,0.7099249958992,0,-0.704277276992798,0.709503829479218,0,0.704701602458954,0.709503829479218,0,0.704701602458954,0.709503829479218,0,0.704701602458954,0.709503829479218,0,0.704701602458954,-0.70959609746933,0,-0.704608619213104,-0.70959609746933,0,-0.704608619213104,-0.70959609746933,0,-0.704608619213104,-0.70959609746933,0,-0.704608619213104,0,0,1,0,0,1,0,0,1,0,0,1,0.00381526607088745,0,-0.999992609024048,0.00381526607088745,0,-0.999992609024048,0.00381526607088745,0,-0.999992609024048,0.00381526607088745,0,-0.999992609024048,0.982136070728302,0,0.188172161579132,0.982136070728302,0,0.188172161579132,0.982136070728302,0,0.188172161579132,0.982136070728302,0,0.188172161579132,-0.982132315635681,0,-0.188191622495651,-0.982132315635681,0,-0.188191622495651,-0.982132315635681,0,-0.188191622495651,-0.982132315635681,0,-0.188191622495651,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1
+			} 
+			NormalsW: *48 {
+				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+			} 
+		}
+		LayerElementBinormal: 0 {
+			Version: 102
+			Name: "map1"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Binormals: *144 {
+				a: -0.70903080701828,0,-0.705177664756775,-0.70903080701828,-1.95475458042438e-008,-0.705177664756775,-0.70903080701828,-3.90950916084876e-008,-0.705177664756775,-0.70903080701828,-1.95475458042438e-008,-0.705177664756775,-0.704277276992798,1.95483082165993e-007,-0.7099249958992,-0.704277276992798,1.56386661842589e-007,-0.7099249958992,-0.704277276992798,1.17290213097476e-007,-0.7099249958992,-0.704277276992798,1.56386661842589e-007,-0.7099249958992,-0.704701602458954,-1.25530652539396e-008,0.709503829479218,-0.704701602458954,-2.19677893653625e-008,0.709503829479218,-0.704701602458954,-3.13825161413206e-008,0.709503829479218,-0.704701602458954,-2.19677893653625e-008,0.709503829479218,0.704608619213104,2.61547459246003e-008,-0.70959609746933,0.704608619213104,6.53874776546104e-009,-0.70959609746933,0.704608619213104,-1.30772512818567e-008,-0.70959609746933,0.704608619213104,6.53874776546104e-009,-0.70959609746933,-1,0,0,-1,-1.95516260959039e-008,0,-1,-3.91032521918078e-008,0,-1,-1.95516260959039e-008,0,-0.999992787837982,3.90749015366509e-008,-0.00381526676937938,-0.999992787837982,3.90749015366509e-008,-0.00381526676937938,-0.999992787837982,3.90749015366509e-008,-0.00381526676937938,-0.999992787837982,3.90749015366509e-008,-0.00381526676937938,-0.188172176480293,1.46427971969842e-008,0.982136130332947,-0.188172176480293,5.4910627156346e-009,0.982136130332947,-0.188172176480293,-3.66067065549203e-009,0.982136130332947,-0.188172176480293,5.4910627156346e-009,0.982136130332947,0.188191637396812,-3.81234510626882e-009,-0.982132375240326,0.188191637396812,-5.71851277442192e-009,-0.982132375240326,0.188191637396812,-7.62467866621819e-009,-0.982132375240326,0.188191637396812,-5.71851277442192e-009,-0.982132375240326,0,0,-1,-0,-1.95516260959039e-008,-1,-0,-3.91032521918078e-008,-1,-0,-1.95516260959039e-008,-1,0,3.91032521918078e-008,-1,0,3.91032521918078e-008,-1,0,3.91032521918078e-008,-1,0,3.91032521918078e-008,-1,-1,1.56414241558878e-008,0,-1,5.86554982362486e-009,0,-1,-3.91032539681646e-009,0,-1,5.86554982362486e-009,0,
+1,-3.91034360447406e-009,0,1,-5.86550941150676e-009,0,1,-7.82067477445025e-009,0,1,-5.86550941150676e-009,0
+			} 
+			BinormalsW: *48 {
+				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+			} 
+
+		}
+		LayerElementBinormal: 1 {
+			Version: 102
+			Name: "map2"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Binormals: *144 {
+				a: 2.33630893324815e-015,1,2.32361254464352e-015,1.16815446662408e-015,1,1.16180627232176e-015,0,1,-0,1.16815446662408e-015,1,1.16180627232176e-015,0,1,0,-1.28956234593199e-015,1,-1.29990355942679e-015,-2.57912469186399e-015,1,-2.59980711885357e-015,-1.28956234593199e-015,1,-1.29990355942679e-015,7.30698216776932e-013,1,-7.35677577884397e-013,3.65349108388466e-013,1,-3.67838788942199e-013,-0,1,0,3.65349108388466e-013,1,-3.67838788942199e-013,7.30627255744742e-013,1,-7.35798900107498e-013,3.65313627872371e-013,1,-3.67899450053749e-013,0,1,0,3.65313627872371e-013,1,-3.67899450053749e-013,-6.19569923377735e-031,1,0,-3.09784961688867e-031,1,0,0,1,-0,-3.09784961688867e-031,1,0,0,1,0,-8.51102510431939e-018,1,-3.24720638514973e-020,-1.70220502086388e-017,1,-6.49441277029947e-020,-8.51102510431939e-018,1,-3.24720638514973e-020,-7.20187645820601e-017,1,3.75891040316152e-016,-3.600938229103e-017,1,1.87945520158076e-016,-0,1,0,-3.600938229103e-017,1,1.87945520158076e-016,-3.63270262636953e-017,1,1.89583073073135e-016,-1.81635131318477e-017,1,9.47915365365676e-017,0,1,0,-1.81635131318477e-017,1,9.47915365365676e-017,0,1,0,0,1,0,0,1,0,0,1,0,-0,1,0,-0,1,0,-0,1,0,-0,1,0,0,1,-0,0,1,-0,0,1,-0,0,1,-0,0,1,0,0,1,0,0,1,0,0,1,0
+			} 
+			BinormalsW: *48 {
+				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+			} 
+
+		}
+		LayerElementTangent: 0 {
+			Version: 102
+			Name: "map1"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Tangents: *144 {
+				a: 0,0.999999940395355,0,-1.3859807523886e-008,0.999999940395355,-1.37844882175386e-008,-2.77196150477721e-008,0.999999940395355,-2.75689764350773e-008,-1.3859807523886e-008,0.999999940395355,-1.37844882175386e-008,-1.37674277311817e-007,-0.999999940395355,-1.38778304403786e-007,-1.10139559694744e-007,-0.999999940395355,-1.11022778526149e-007,-8.26048278668168e-008,-0.999999940395355,-8.32672455430838e-008,-1.10139559694744e-007,-0.999999940395355,-1.11022778526149e-007,-8.84616380147918e-009,0.999999940395355,8.90644624718107e-009,-1.54807349161956e-008,0.999999940395355,1.55862291961739e-008,-2.21153069190905e-008,0.999999940395355,2.22660130333452e-008,-1.54807349161956e-008,0.999999940395355,1.55862291961739e-008,-1.84288584392789e-008,0.999999940395355,1.85593052037802e-008,-4.60725768647308e-009,0.999999940395355,4.63986982168763e-009,9.21434306633273e-009,0.999999940395355,-9.27956556040499e-009,-4.60725768647308e-009,0.999999940395355,4.63986982168763e-009,0,0.999999940395355,0,-1.9551624319547e-008,0.999999940395355,0,-3.91032486390941e-008,0.999999940395355,-0,-1.9551624319547e-008,0.999999940395355,0,-3.90746102141293e-008,-0.999999940395355,-1.49081136324725e-010,-3.90746102141293e-008,-0.999999940395355,-1.49081136324725e-010,-3.90746102141293e-008,-0.999999940395355,-1.49081136324725e-010,-3.90746102141293e-008,-0.999999940395355,-1.49081136324725e-010,2.75536637950324e-009,0.999999940395355,-1.43812171060631e-008,1.0332650290934e-009,0.999999940395355,-5.39297051460608e-009,-6.88836210294141e-010,0.999999940395355,3.59527607685095e-009,1.0332650290934e-009,0.999999940395355,-5.39297051460608e-009,7.17451431597738e-010,0.999999940395355,-3.74422715054834e-009,1.07617603717358e-009,0.999999940395355,-5.61633539675199e-009,1.43490064274943e-009,0.999999940395355,-7.48844275477722e-009,1.07617603717358e-009,0.999999940395355,-5.61633539675199e-009,0,0.999999940395355,0,0,0.999999940395355,-1.9551624319547e-008,0,0.999999940395355,-3.91032486390941e-008,0,0.999999940395355,-1.9551624319547e-008,
+0,-0.999999940395355,-3.91032486390941e-008,0,-0.999999940395355,-3.91032486390941e-008,0,-0.999999940395355,-3.91032486390941e-008,0,-0.999999940395355,-3.91032486390941e-008,1.56414223795309e-008,0.999999940395355,0,5.86554893544644e-009,0.999999940395355,0,-3.91032495272725e-009,0.999999940395355,-0,5.86554893544644e-009,0.999999940395355,0,3.91034316038485e-009,0.999999940395355,0,5.86550852332834e-009,0.999999940395355,0,7.82067388627183e-009,0.999999940395355,0,5.86550852332834e-009,0.999999940395355,0
+			} 
+			TangentsW: *48 {
+				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+			} 
+		}
+		LayerElementTangent: 1 {
+			Version: 102
+			Name: "map2"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Tangents: *144 {
+				a: 0.70903068780899,-3.295074208333e-015,0.705177545547485,0.70903068780899,-1.6475371041665e-015,0.705177545547485,0.70903068780899,0,0.705177545547485,0.70903068780899,-1.6475371041665e-015,0.705177545547485,-0.704277217388153,0,-0.709924936294556,-0.704277217388153,-1.83104340405736e-015,-0.709924936294556,-0.704277217388153,-3.66208680811471e-015,-0.709924936294556,-0.704277217388153,-1.83104340405736e-015,-0.709924936294556,0.704701542854309,-1.03689008334323e-012,-0.709503769874573,0.704701542854309,-5.18445041671617e-013,-0.709503769874573,0.704701542854309,0,-0.709503769874573,0.704701542854309,-5.18445041671617e-013,-0.709503769874573,-0.704608619213104,1.03692618727558e-012,0.70959609746933,-0.704608619213104,5.18463093637789e-013,0.70959609746933,-0.704608619213104,-0,0.70959609746933,-0.704608619213104,5.18463093637789e-013,0.70959609746933,0.999999940395355,6.19569829338186e-031,-0,0.999999940395355,3.09784914669093e-031,0,0.999999940395355,-0,0,0.999999940395355,3.09784914669093e-031,0,-0.999992668628693,0,-0.00381526630371809,-0.999992668628693,-8.51108631568472e-018,-0.00381526630371809,-0.999992668628693,-1.70221726313694e-017,-0.00381526630371809,-0.999992668628693,-8.51108631568472e-018,-0.00381526630371809,0.188172146677971,3.82728025568593e-016,-0.982136011123657,0.188172146677971,1.91364012784296e-016,-0.982136011123657,0.188172146677971,0,-0.982136011123657,0.188172146677971,1.91364012784296e-016,-0.982136011123657,-0.188191622495651,-1.93032085355236e-016,0.982132315635681,-0.188191622495651,-9.65160426776181e-017,0.982132315635681,-0.188191622495651,0,0.982132315635681,-0.188191622495651,-9.65160426776181e-017,0.982132315635681,0,-0,0.999999940395355,0,-0,0.999999940395355,0,-0,0.999999940395355,0,-0,0.999999940395355,0,0,-0.999999940395355,0,0,-0.999999940395355,0,0,-0.999999940395355,0,0,-0.999999940395355,0.999999940395355,-0,-0,0.999999940395355,-0,0,0.999999940395355,-0,0,0.999999940395355,-0,0,-0.999999940395355,-0,0,-0.999999940395355,0,0,-0.999999940395355,0,0,-0.999999940395355,0,0
+			} 
+			TangentsW: *48 {
+				a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+			} 
+		}
+		LayerElementUV: 0 {
+			Version: 101
+			Name: "map1"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "IndexToDirect"
+			UV: *96 {
+				a: 0.0519924312829971,0.609240591526031,0.0519924014806747,0.571133434772491,1.04800796508789,0.571133375167847,1.04800796508789,0.609240591526031,0.0519924461841583,0.609240591526031,0.0519923865795136,0.571133553981781,1.0480078458786,0.571133375167847,1.04800796508789,0.609240293502808,0.0519924163818359,0.609240651130676,0.0519924163818359,0.571133553981781,1.04800796508789,0.571133255958557,1.04800808429718,0.609240531921387,0.0519924461841583,0.609240293502808,0.0519924163818359,0.571133553981781,1.04800796508789,0.571133434772491,1.0480078458786,0.609240531921387,0.051992192864418,0.609240591526031,0.0519921481609344,0.571133434772491,1.04800772666931,0.571133375167847,1.0480078458786,0.609240591526031,0.0519923567771912,0.609240651130676,0.0519924759864807,0.571133434772491,1.04800808429718,0.571133375167847,1.04800796508789,0.609240591526031,0.0519924461841583,0.609240353107452,0.0519924014806747,0.571133434772491,1.04800796508789,0.571133375167847,1.04800796508789,0.609240591526031,0.0519924312829971,0.609240591526031,0.0519924461841583,0.571133553981781,1.04800796508789,0.571133434772491,1.04800796508789,0.609240531921387,0.051992192864418,0.609240591526031,0.0519921481609344,0.571133434772491,1.04800772666931,0.571133375167847,1.0480078458786,0.609240591526031,0.0519923567771912,0.609240651130676,0.0519924759864807,0.571133434772491,1.04800808429718,0.571133375167847,1.04800796508789,0.609240591526031,0.0519924461841583,0.609240353107452,0.0519924014806747,0.571133434772491,1.04800796508789,0.571133375167847,1.04800796508789,0.609240591526031,0.0519924312829971,0.609240591526031,0.0519924461841583,0.571133553981781,1.04800796508789,0.571133434772491,1.04800796508789,0.609240531921387
+			} 
+			UVIndex: *48 {
+				a: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
+			} 
+		}
+		LayerElementUV: 1 {
+			Version: 101
+			Name: "map2"
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "IndexToDirect"
+			UV: *96 {
+				a: 0.257775872945786,0.015625,0.281994611024857,0.015625,0.281994611024857,0.98437488079071,0.257775872945786,0.98437488079071,0.0398439317941666,0.984374821186066,0.015625,0.984374821186066,0.015625,0.015625,0.0398439317941666,0.015625,0.361554831266403,0.015625,0.383823692798615,0.015625,0.383823692798615,0.984373688697815,0.361554831266403,0.984373688697815,0.292368859052658,0.015625,0.315565705299377,0.015625,0.315565705299377,0.984374582767487,0.292368859052658,0.984374582767487,0.0848109573125839,0.015625,0.109029717743397,0.015625,0.109029702842236,0.984374701976776,0.0848109573125839,0.984374701976776,0.0744367688894272,0.984374642372131,0.0502179823815823,0.984374642372131,0.0502179823815823,0.015625,0.0744367688894272,0.015625,0.396147817373276,0.015625,0.41841647028923,0.015625,0.41841647028923,0.984375,0.396147817373276,0.984375,0.326961845159531,0.015625,0.350158393383026,0.015625,0.350158393383026,0.984374582767487,0.326961845159531,0.984374582767487,0.153996929526329,0.015625,0.178215682506561,0.015625,0.178215682506561,0.984374761581421,0.153996929526329,0.984374761581421,0.143622696399689,0.984374821186066,0.119403950870037,0.984374821186066,0.119403950870037,0.015625,0.143622696399689,0.015625,0.223182901740074,0.015625,0.247401639819145,0.015625,0.247401639819145,0.984374761581421,0.223182901740074,0.984374761581421,0.188589915633202,0.015625,0.212808668613434,0.015625,0.212808668613434,0.984374523162842,0.188589915633202,0.984374523162842
+			} 
+			UVIndex: *48 {
+				a: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
+			} 
+		}
+		LayerElementSmoothing: 0 {
+			Version: 102
+			Name: ""
+			MappingInformationType: "ByEdge"
+			ReferenceInformationType: "Direct"
+			Smoothing: *36 {
+				a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+			} 
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "AllSame"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: *1 {
+				a: 0
+			} 
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementBinormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementTangent"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementSmoothing"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
+				TypedIndex: 0
+			}
+		}
+		Layer: 1 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementBinormal"
+				TypedIndex: 1
+			}
+			LayerElement:  {
+				Type: "LayerElementTangent"
+				TypedIndex: 1
+			}
+			LayerElement:  {
+				Type: "LayerElementUV"
+				TypedIndex: 1
+			}
+		}
+	}
+	Model: 1821885566976, "Model::Wall_014", "Mesh" {
+		Version: 232
+		Properties70:  {
+			P: "RotationPivot", "Vector3D", "Vector", "",400,0,6400
+			P: "ScalingPivot", "Vector3D", "Vector", "",400,0,6400
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-400,0,-6400
+			P: "currentUVSet", "KString", "", "U", "map1"
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Material: 1822925370304, "Material::M_Trim", "" {
+		Version: 102
+		ShadingModel: "unknown"
+		MultiLayer: 0
+		Properties70:  {
+			P: "Maya", "Compound", "", ""
+			P: "Maya|TypeId", "int", "Integer", "",1166017
+			P: "Maya|TEX_global_diffuse_cube", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|TEX_global_specular_cube", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|TEX_brdf_lut", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|use_normal_map", "float", "", "",1
+			P: "Maya|uv_offset", "Vector2D", "Vector2", "",0,0
+			P: "Maya|uv_scale", "Vector2D", "Vector2", "",1,1
+			P: "Maya|TEX_normal_map", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|use_color_map", "float", "", "",0
+			P: "Maya|TEX_color_map", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|base_color", "Vector3D", "Vector", "",0.385620921850204,0.385620921850204,0.385620921850204
+			P: "Maya|use_metallic_map", "float", "", "",0
+			P: "Maya|TEX_metallic_map", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|metallic", "float", "", "",0
+			P: "Maya|use_roughness_map", "float", "", "",1
+			P: "Maya|TEX_roughness_map", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|roughness", "float", "", "",0.33
+			P: "Maya|use_emissive_map", "float", "", "",0
+			P: "Maya|TEX_emissive_map", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Maya|emissive_intensity", "float", "", "",0
+			P: "Maya|use_ao_map", "float", "", "",1
+			P: "Maya|TEX_ao_map", "Vector3D", "Vector", "",0,0,0
+		}
+	}
+	Video: 1822638112752, "Video::file2", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/specular_cube.dds"
+		}
+		UseMipMap: 0
+		Filename: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/specular_cube.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\midday\specular_cube.dds"
+	}
+	Video: 1822638099152, "Video::file1", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/diffuse_cube.dds"
+		}
+		UseMipMap: 0
+		Filename: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/diffuse_cube.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\midday\diffuse_cube.dds"
+	}
+	Video: 1822638196752, "Video::file3", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/ibl_brdf_lut.dds"
+		}
+		UseMipMap: 0
+		Filename: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/ibl_brdf_lut.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\ibl_brdf_lut.dds"
+	}
+	Video: 1822638291152, "Video::Trim_01_1", "Clip" {
+		Type: "Clip"
+		Properties70:  {
+			P: "Path", "KString", "XRefUrl", "", "D:/[Model Store]/Enviroments/1/Normal_Maps/Trim/Trim_01.png"
+		}
+		UseMipMap: 0
+		Filename: "D:/[Model Store]/Enviroments/1/Normal_Maps/Trim/Trim_01.png"
+		RelativeFilename: "Normal_Maps\Trim\Trim_01.png"
+	}
+	Texture: 1821182965792, "Texture::file2", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::file2"
+		Properties70:  {
+			P: "UseMaterial", "bool", "", "",1
+		}
+		Media: "Video::file2"
+		FileName: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/specular_cube.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\midday\specular_cube.dds"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Texture: 1821182950432, "Texture::file1", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::file1"
+		Properties70:  {
+			P: "UseMaterial", "bool", "", "",1
+		}
+		Media: "Video::file1"
+		FileName: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/midday/diffuse_cube.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\midday\diffuse_cube.dds"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Texture: 1821182950912, "Texture::file3", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::file3"
+		Properties70:  {
+			P: "UseMaterial", "bool", "", "",1
+		}
+		Media: "Video::file3"
+		FileName: "C:/Program Files/Autodesk/MayaLT2017/presets/ShaderFX/Images/PBS/ibl_brdf_lut.dds"
+		RelativeFilename: "C:\Program Files\Autodesk\MayaLT2017\presets\ShaderFX\Images\PBS\ibl_brdf_lut.dds"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Texture: 1821182952352, "Texture::Trim_01_1", "" {
+		Type: "TextureVideoClip"
+		Version: 202
+		TextureName: "Texture::Trim_01_1"
+		Properties70:  {
+			P: "UseMaterial", "bool", "", "",1
+		}
+		Media: "Video::Trim_01_1"
+		FileName: "D:/[Model Store]/Enviroments/1/Normal_Maps/Trim/Trim_01.png"
+		RelativeFilename: "Normal_Maps\Trim\Trim_01.png"
+		ModelUVTranslation: 0,0
+		ModelUVScaling: 1,1
+		Texture_Alpha_Source: "None"
+		Cropping: 0,0,0,0
+	}
+	Implementation: 1821176220240, "Implementation::M_Trim_Implementation", "" {
+		Version: 100
+		Properties70:  {
+			P: "ShaderLanguage", "KString", "", "", "SFX"
+			P: "ShaderLanguageVersion", "KString", "", "", "28"
+			P: "RenderAPI", "KString", "", "", "SFX_PBS_SHADER"
+			P: "RootBindingName", "KString", "", "", "root"
+			P: "ShaderGraph", "Blob", "", "",31645 {
+				BinaryData: "U0ZCX1dJTiA9IHsgcGFyZW50X21hdGVyaWFsID0gImNvcmUvc3RpbmdyYXlfcmVuZGVyZXIvc2hhZGVyX2ltcG9ydC9zdGFuZGFyZCIgLyoKVmVyc2lvbj0yOApHcm91cFZlcnNpb249LTEuMApBZHZhbmNlZD0wCkhlbHBJRD0wClBhcmVudE1hdGVyaWFsPXByZXNldHMvU3RhbmRhcmQKTnVtYmVyT2ZOb2Rlcz0zMgojTlQ9MjAxODkgMAoJUEM9MwoJbmFtZT0xIHY9NTAwMCBNZXRhbGxpY19NYXBfU3dpdGNoCglwb3N4PTEgdj0yMDAzIDEwMjAuMAoJcG9zeT0xIHY9MjAwMyAyNDAuMAoJZ3JvdXA9LTEKCUlTQz00CgkJU1ZUPTUwMjIgMjAwMyAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMSAwIAoJCVNEVj0xLjAKCQlTVlQ9NTAyMiAyMDAzIDMgMCAxIAoJCVNDUz1yCgkJU1ZUPTUwMjIgMjAwMyA0IDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMjAwMyA1IAoJCUNDPTEKCQkJQz0wIDAgNSA1IDUgNiAwCgkJCUNQQz0wCiNOVD0yMDE4OSAwCglQQz0zCgluYW1lPTEgdj01MDAwIEVtaXNzaXZlX01hcF9Td2l0Y2gKCXBvc3g9MSB2PTIwMDMgNzQwLjAKCXBvc3k9MSB2PTIwMDMgNzgwLjAKCWdyb3VwPS0xCglJU0M9NAoJCVNWVD01MDIyIDIwMDMgMSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAyIDEgMCAKCQlTRFY9MS4wCgkJU1ZUPTUwMjIgMzAwMiAzIDAgMSAKCQlTQ1M9cmdiCgkJU1ZUPTUwMjIgMzAwMiA0IDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMiA1IAoJCUNDPTEKCQkJQz0xIDAgNSAxMCAwIDEgMAoJCQlDUEM9MAojTlQ9MjAxODkgMAoJUEM9MwoJbmFtZT0xIHY9NTAwMCBDb2xvcl9NYXBfU3dpdGNoCglwb3N4PTEgdj0yMDAzIDEwMjAuMAoJcG9zeT0xIHY9MjAwMyAtMzQwLjAKCWdyb3VwPS0xCglJU0M9NAoJCVNWVD01MDIyIDIwMDMgMSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAyIDEgMCAKCQlTRFY9MS4wCgkJU1ZUPTUwMjIgMzAwMiAzIDAgMSAKCQlTQ1M9cmdiCgkJU1ZUPTUwMjIgMzAwMiA0IDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMiA1IAoJCUNDPTEKCQkJQz0yIDAgNSA1IDEgMiAwCgkJCUNQQz0wCiNOVD0yMDE4OSAwCglQQz0zCgluYW1lPTEgdj01MDAwIE5vcm1hbF9NYXBfU3dpdGNoCglwb3N4PTEgdj0yMDAzIDEwMjAuMAoJcG9zeT0xIHY9MjAwMyAtNjAuMAoJZ3JvdXA9LTEKCUlTQz00CgkJU1ZUPTUwMjIgMjAwMyAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMSAwIAoJCVNEVj0xLjAKCQlTVlQ9NTAyMiAzMDAyIDMgMCAwIAoJCVNWVD01MDIyIDMwMDIgNCAwIDAgCglPU0M9MQoJCVNWVD01MDIyIDMwMDIgNSAKCQlDQz0xCgkJCUM9MyAwIDUgNSA0IDUgMAoJCQlDUEM9MAojTlQ9MjAxODkgMAoJUEM9MwoJbmFtZT0xIHY9NTAwMCBSb3VnaG5lc3NfTWFwX1N3aXRjaAoJcG9zeD0xIHY9MjAwMyAxMDIwLjAKCXBvc3k9MSB2PTIwMDMgNTQwLjAKCWdyb3VwPS0xCglJU0M9NAoJCVNWVD01MDIyIDIwMDMgMSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAyIDEgMCAKCQlTRFY9MS4wCgkJU1ZUPTUwMjIgMjAwMyAzIDAgMSAKCQlTQ1M9cgoJCVNWVD01MDIyIDIwMDMgNCAwIDAgCglPU0M9MQoJCVNWVD01MDIyIDIwMDMgNSAKCQlDQz0xCgkJCUM9NCAwIDUgNSA2IDcgMAoJCQlDUEM9MAojTlQ9MjAxNzYgMAoJUEM9NQoJcG9zeD0xIHY9MjAwMyAxMzYwLjAKCXBvc3k9MSB2PTIwMDMgMjYwLjAKCXNoYWRlcnJlc291cmNlPTEgdj01MDAwIGNvcmUvc3RpbmdyYXlfcmVuZGVyZXIvc2hhZGVyX2ltcG9ydC9zdGFuZGFyZAoJcHJlc2V0X3BhdGg9MSB2PTUwMDAgcHJlc2V0cy9TdGFuZGFyZAoJbm9ybWFsc3BhY2U9MiBlPTAgdj01MDEyIDEKCWdyb3VwPS0xCglJU0M9MTMKCQlTVlQ9NTAyMiAzMDAyIDEgMCAwIAoJCVNWVD01MDIyIDMwMDIgMiAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAzIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDQgMCAwIAoJCVNWVD01MDIyIDMwMDIgNSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyA2IDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDcgMCAwIAoJCVNWVD01MDIyIDMwMDIgOCAwIDAgCgkJU1ZUPTUwMjIgMjAwMyA5IDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDEwIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDExIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDE0IDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDE1IDAgMCAKCU9TQz0wCiNOVD0yMDE4OSAwCglQQz0zCgluYW1lPTEgdj01MDAwIEFvX01hcF9Td3RpY2gKCXBvc3g9MSB2PTIwMDMgMTAyMC4wCglwb3N5PTEgdj0yMDAzIDExMDAuMAoJZ3JvdXA9LTEKCUlTQz00CgkJU1ZUPTUwMjIgMjAwMyAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMSAwIAoJCVNEVj0xLjAKCQlTVlQ9NTAyMiAyMDAzIDMgMCAxIAoJCVNDUz1yCgkJU1ZUPTUwMjIgMjAwMyA0IDEgMCAKCQlTRFY9MS4wCglPU0M9MQoJCVNWVD01MDIyIDIwMDMgNSAKCQlDQz0xCgkJCUM9NiAwIDUgNSA4IDkgMAoJCQlDUEM9MAojTlQ9MjAxNzggMAoJUEM9MgoJcG9zeD0xIHY9MjAwMyAtMjYwLjAKCXBvc3k9MSB2PTIwMDMgNDIwLjAKCWdyb3VwPS0xCglJU0M9MAoJT1NDPTEKCQlTVlQ9NTAyMiAzMDAxIDEgCgkJQ0M9MQoJCQlDPTcgMCAxIDI4IDEgMiAwCgkJCUNQQz0wCiNOVD0yMDE3NyAwCglQQz01CgluYW1lPTEgdj01MDAwIHJvdWdobmVzc19tYXAKCXBvc3g9MSB2PTIwMDMgNzAwLjAKCXBvc3k9MSB2PTIwMDMgNTQwLjAKCWVuY29kaW5nPTIgZT0wIHY9NTAxMiAwCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiA0Cgln",
+ "cm91cD0tMQoJSVNDPTIKCQlTVlQ9NTAyMiAzMDAxIDEgMCAwIAoJCVNWVD01MDIyIDIwMDMgMiAwIDAgCglPU0M9MQoJCVNWVD01MDIyIDMwMDMgMyAKCQlDQz0xCgkJCUM9OCAwIDMgNCAyIDMgMAoJCQlDUEM9MAojTlQ9MjAxNzcgMAoJUEM9NAoJbmFtZT0xIHY9NTAwMCBlbWlzc2l2ZV9tYXAKCXBvc3g9MSB2PTIwMDMgNDIwLjAKCXBvc3k9MSB2PTIwMDMgNzgwLjAKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDUKCWdyb3VwPS0xCglJU0M9MgoJCVNWVD01MDIyIDMwMDEgMSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAyIDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMyAzIAoJCUNDPTEKCQkJQz05IDAgMyAxIDIgMyAwCgkJCUNQQz0wCiNOVD0yMDE4NiAwCglQQz0yCglwb3N4PTEgdj0yMDAzIDEwMjAuMAoJcG9zeT0xIHY9MjAwMyA4NDAuMAoJZ3JvdXA9LTEKCUlTQz0yCgkJU1ZUPTUwMjIgMzAwMiAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMCAwIAoJT1NDPTEKCQlTVlQ9NTAyMiAzMDAyIDMgCgkJQ0M9MQoJCQlDPTEwIDAgMyA1IDcgOCAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz02CgluYW1lPTEgdj01MDAwIHVzZV9jb2xvcl9tYXAKCXBvc3g9MSB2PTIwMDMgNzAwLjAKCXBvc3k9MSB2PTIwMDMgLTQwMC4wCgl0eXBlPTIgZT0wIHY9NTAxMiAwCgl1aXR5cGU9MiBlPTAgdj01MDEyIDEKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDEwCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMjAwMyAxIAoJCUNDPTEKCQkJQz0xMSAwIDEgMiAwIDEgMAoJCQlDUEM9MAojTlQ9MjAxNzcgMAoJUEM9NAoJbmFtZT0xIHY9NTAwMCBjb2xvcl9tYXAKCXBvc3g9MSB2PTIwMDMgNzAwLjAKCXBvc3k9MSB2PTIwMDMgLTM0MC4wCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiAxCglncm91cD0tMQoJSVNDPTIKCQlTVlQ9NTAyMiAzMDAxIDEgMCAwIAoJCVNWVD01MDIyIDIwMDMgMiAwIDAgCglPU0M9MQoJCVNWVD01MDIyIDMwMDMgMyAKCQlDQz0xCgkJCUM9MTIgMCAzIDIgMiAzIDAKCQkJQ1BDPTAKI05UPTIwMTg1IDAKCVBDPTcKCW5hbWU9MSB2PTUwMDAgYmFzZV9jb2xvcgoJcG9zeD0xIHY9MjAwMyA3MDAuMAoJcG9zeT0xIHY9MjAwMyAtMjQwLjAKCXR5cGU9MiBlPTAgdj01MDEyIDIKCWRlZmF1bHR2ZWN0aHJlZT0yIGU9MCB2PTMwMDIgMC4zODU2MjEsMC4zODU2MjEsMC4zODU2MjEKCWRlZmF1bHR2ZWN0b3I9MiBlPTAgdj0zMDAzIDAuNSwwLjUsMC41LDAuMAoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgMjAKCWdyb3VwPS0xCglJU0M9MAoJT1NDPTEKCQlTVlQ9NTAyMiAzMDAyIDEgCgkJQ0M9MQoJCQlDPTEzIDAgMSAyIDMgNCAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz03CgluYW1lPTEgdj01MDAwIHVzZV9ub3JtYWxfbWFwCglwb3N4PTEgdj0yMDAzIDcwMC4wCglwb3N5PTEgdj0yMDAzIC0xMjAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMAoJZGVmYXVsdHNjYWxhcj0yIGU9MCB2PTIwMDMgMS4wCgl1aXR5cGU9MiBlPTAgdj01MDEyIDEKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDExCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMjAwMyAxIAoJCUNDPTEKCQkJQz0xNCAwIDEgMyAwIDEgMAoJCQlDUEM9MAojTlQ9MjAxOTQgMAoJUEM9MgoJcG9zeD0xIHY9MjAwMyA2ODAuMAoJcG9zeT0xIHY9MjAwMyA2MC4wCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMiAxIAoJCUNDPTEKCQkJQz0xNSAwIDEgMyAzIDQgMAoJCQlDUEM9MAojTlQ9MjAxOTUgMAoJUEM9MgoJcG9zeD0xIHY9MjAwMyA3NDAuMAoJcG9zeT0xIHY9MjAwMyAtNjAuMAoJZ3JvdXA9LTEKCUlTQz0xCgkJU1ZUPTUwMjIgMzAwMiAxIDAgMSAKCQlTQ1M9cmdiCglPU0M9MQoJCVNWVD01MDIyIDMwMDIgMiAKCQlDQz0xCgkJCUM9MTYgMCAyIDMgMiAzIDAKCQkJQ1BDPTAKI05UPTIwMTc3IDAKCVBDPTYKCW5hbWU9MSB2PTUwMDAgbm9ybWFsX21hcAoJcG9zeD0xIHY9MjAwMyA0NDAuMAoJcG9zeT0xIHY9MjAwMyAtNjAuMAoJdGV4dHVyZXBhdGg9MiBlPTEgdj01MDAwIEQ6L1tNb2RlbCBTdG9yZV0vRW52aXJvbWVudHMvMS9Ob3JtYWxfTWFwcy9UcmltL1RyaW1fMDEucG5nCgllbmNvZGluZz0yIGU9MCB2PTUwMTIgMgoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgMgoJZ3JvdXA9LTEKCUlTQz0yCgkJU1ZUPTUwMjIgMzAwMSAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMCAwIAoJT1NDPTEKCQlTVlQ9NTAyMiAzMDAzIDMgCgkJQ0M9MQoJCQlDPTE3IDAgMyAxNiAwIDEgMAoJCQlDUEM9MAojTlQ9MjAxNzcgMAoJUEM9NgoJbmFtZT0xIHY9NTAwMCBtZXRhbGxpY19tYXAKCXBvc3g9MSB2PTIwMDMgNzAwLjAKCXBvc3k9MSB2PTIwMDMgMjQwLjAKCWVuY29kaW5nPTIgZT0wIHY9NTAxMiAwCglmaWx0ZXI9MiBlPTAgdj01MDEyIDEKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDMKCWdyb3VwPS0xCglJU0M9MgoJCVNWVD01MDIyIDMwMDEgMSAwIDAgCgkJU1ZUPTUwMjIgMjAwMyAyIDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMyAzIAoJCUNDPTEKCQkJQz0xOCAwIDMgMCAyIDMgMAoJCQlDUEM9MAojTlQ9MjAxODUgMAoJUEM9NgoJbmFtZT0xIHY9NTAwMCB1c2VfbWV0YWxsaWNfbWFwCglwb3N4PTEgdj0yMDAzIDcwMC4wCglwb3N5PTEgdj0yMDAzIDE4MC4wCgl0eXBlPTIgZT0wIHY9NTAxMiAwCgl1aXR5cGU9MiBlPTAgdj01MDEyIDEKCXVpb3JkZXI9",
+ "MiBlPTAgdj0yMDAyIDEyCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMjAwMyAxIAoJCUNDPTEKCQkJQz0xOSAwIDEgMCAwIDEgMAoJCQlDUEM9MAojTlQ9MjAxODUgMAoJUEM9NQoJbmFtZT0xIHY9NTAwMCBtZXRhbGxpYwoJcG9zeD0xIHY9MjAwMyA3MDAuMAoJcG9zeT0xIHY9MjAwMyAzNDAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMAoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgMjEKCWdyb3VwPS0xCglJU0M9MAoJT1NDPTEKCQlTVlQ9NTAyMiAyMDAzIDEgCgkJQ0M9MQoJCQlDPTIwIDAgMSAwIDMgNCAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz03CgluYW1lPTEgdj01MDAwIHVzZV9yb3VnaG5lc3NfbWFwCglwb3N4PTEgdj0yMDAzIDcwMC4wCglwb3N5PTEgdj0yMDAzIDQ4MC4wCgl0eXBlPTIgZT0wIHY9NTAxMiAwCglkZWZhdWx0c2NhbGFyPTIgZT0wIHY9MjAwMyAxLjAKCXVpdHlwZT0yIGU9MCB2PTUwMTIgMQoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgMTMKCWdyb3VwPS0xCglJU0M9MAoJT1NDPTEKCQlTVlQ9NTAyMiAyMDAzIDEgCgkJQ0M9MQoJCQlDPTIxIDAgMSA0IDAgMSAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz02CgluYW1lPTEgdj01MDAwIHJvdWdobmVzcwoJcG9zeD0xIHY9MjAwMyA3MDAuMAoJcG9zeT0xIHY9MjAwMyA2NDAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMAoJZGVmYXVsdHNjYWxhcj0yIGU9MCB2PTIwMDMgMC4zMwoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgMjIKCWdyb3VwPS0xCglJU0M9MAoJT1NDPTEKCQlTVlQ9NTAyMiAyMDAzIDEgCgkJQ0M9MQoJCQlDPTIyIDAgMSA0IDMgNCAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz01CgluYW1lPTEgdj01MDAwIGVtaXNzaXZlCglwb3N4PTEgdj0yMDAzIDQyMC4wCglwb3N5PTEgdj0yMDAzIDg4MC4wCgl0eXBlPTIgZT0wIHY9NTAxMiAyCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiAyMwoJZ3JvdXA9LTEKCUlTQz0wCglPU0M9MQoJCVNWVD01MDIyIDMwMDIgMSAKCQlDQz0xCgkJCUM9MjMgMCAxIDEgMyA0IDAKCQkJQ1BDPTAKI05UPTIwMTg1IDAKCVBDPTYKCW5hbWU9MSB2PTUwMDAgdXNlX2VtaXNzaXZlX21hcAoJcG9zeD0xIHY9MjAwMyA0MjAuMAoJcG9zeT0xIHY9MjAwMyA3MjAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMAoJdWl0eXBlPTIgZT0wIHY9NTAxMiAxCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiAxNAoJZ3JvdXA9LTEKCUlTQz0wCglPU0M9MQoJCVNWVD01MDIyIDIwMDMgMSAKCQlDQz0xCgkJCUM9MjQgMCAxIDEgMCAxIDAKCQkJQ1BDPTAKI05UPTIwMTg1IDAKCVBDPTcKCW5hbWU9MSB2PTUwMDAgdXNlX2FvX21hcAoJcG9zeD0xIHY9MjAwMyA3MDAuMAoJcG9zeT0xIHY9MjAwMyAxMTAwLjAKCXR5cGU9MiBlPTAgdj01MDEyIDAKCWRlZmF1bHRzY2FsYXI9MiBlPTAgdj0yMDAzIDEuMAoJdWl0eXBlPTIgZT0wIHY9NTAxMiAxCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiAxNQoJZ3JvdXA9LTEKCUlTQz0wCglPU0M9MQoJCVNWVD01MDIyIDIwMDMgMSAKCQlDQz0xCgkJCUM9MjUgMCAxIDYgMCAxIDAKCQkJQ1BDPTAKI05UPTIwMTc3IDAKCVBDPTYKCW5hbWU9MSB2PTUwMDAgYW9fbWFwCglwb3N4PTEgdj0yMDAzIDcwMC4wCglwb3N5PTEgdj0yMDAzIDExNjAuMAoJZW5jb2Rpbmc9MiBlPTAgdj01MDEyIDAKCWZpbHRlcj0yIGU9MCB2PTUwMTIgMQoJdWlvcmRlcj0yIGU9MCB2PTIwMDIgNgoJZ3JvdXA9LTEKCUlTQz0yCgkJU1ZUPTUwMjIgMzAwMSAxIDAgMCAKCQlTVlQ9NTAyMiAyMDAzIDIgMCAwIAoJT1NDPTEKCQlTVlQ9NTAyMiAzMDAzIDMgCgkJQ0M9MQoJCQlDPTI2IDAgMyA2IDIgMyAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz02CgluYW1lPTEgdj01MDAwIGVtaXNzaXZlX2ludGVuc2l0eQoJcG9zeD0xIHY9MjAwMyA3NDAuMAoJcG9zeT0xIHY9MjAwMyA5MjAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMAoJbWF4cmFuZ2U9MiBlPTAgdj0yMDAzIDEwLjAKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDUzCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMjAwMyAxIAoJCUNDPTEKCQkJQz0yNyAwIDEgMTAgMSAyIDAKCQkJQ1BDPTAKI05UPTIwMTg2IDAKCVBDPTIKCXBvc3g9MSB2PTIwMDMgLTYwLjAKCXBvc3k9MSB2PTIwMDMgNDAwLjAKCWdyb3VwPS0xCglJU0M9MgoJCVNWVD01MDIyIDMwMDEgMSAwIDAgCgkJU1ZUPTUwMjIgMzAwMSAyIDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMSAzIAoJCUNDPTEKCQkJQz0yOCAwIDMgMjkgMSAyIDAKCQkJQ1BDPTAKI05UPTIwMTg3IDAKCVBDPTIKCXBvc3g9MSB2PTIwMDMgMTIwLjAKCXBvc3k9MSB2PTIwMDMgNDAwLjAKCWdyb3VwPS0xCglJU0M9MgoJCVNWVD01MDIyIDMwMDEgMSAwIDAgCgkJU1ZUPTUwMjIgMzAwMSAyIDAgMCAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMSAzIAoJCUNDPTYKCQkJQz0yOSAwIDMgMTIgMCAxIDAKCQkJQ1BDPTAKCQkJQz0yOSAwIDMgMTcgMCAxIDAKCQkJQ1BDPTAKCQkJQz0yOSAwIDMgMTggMCAxIDAKCQkJQ1BDPTAKCQkJQz0yOSAwIDMgOCAwIDEgMAoJCQlDUEM9MAoJCQlDPTI5IDAgMyA5IDAgMSAwCgkJCUNQQz0wCgkJCUM9MjkgMCAzIDI2IDAgMSAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz03CgluYW1lPTEgdj01MDAwIHV2X29mZnNldAoJcG9zeD0xIHY9MjAwMyAtNjAuMAoJcG9zeT0xIHY9MjAwMyAzNDAuMAoJdHlwZT0yIGU9MCB2PTUwMTIg",
+ "MQoJbWlucmFuZ2U9MiBlPTAgdj0yMDAzIC0xMDAwMDEuMAoJbWF4cmFuZ2U9MiBlPTAgdj0yMDAzIDEwMDAwMS4wCgl1aW9yZGVyPTIgZT0wIHY9MjAwMiA2MAoJZ3JvdXA9LTEKCUlTQz0wCglPU0M9MQoJCVNWVD01MDIyIDMwMDEgMSAKCQlDQz0xCgkJCUM9MzAgMCAxIDI5IDAgMSAwCgkJCUNQQz0wCiNOVD0yMDE4NSAwCglQQz05CgluYW1lPTEgdj01MDAwIHV2X3NjYWxlCglwb3N4PTEgdj0yMDAzIC0yNDAuMAoJcG9zeT0xIHY9MjAwMyAzNDAuMAoJdHlwZT0yIGU9MCB2PTUwMTIgMQoJZGVmYXVsdHZlY3R3bz0yIGU9MCB2PTMwMDEgMS4wLDEuMAoJZGVmYXVsdHZlY3Rvcj0yIGU9MCB2PTMwMDMgMS4wLDEuMCwwLjAsMC4wCgltaW5yYW5nZT0yIGU9MCB2PTIwMDMgLTEwMDAwMS4wCgltYXhyYW5nZT0yIGU9MCB2PTIwMDMgMTAwMDAxLjAKCXVpb3JkZXI9MiBlPTAgdj0yMDAyIDYxCglncm91cD0tMQoJSVNDPTAKCU9TQz0xCgkJU1ZUPTUwMjIgMzAwMSAxIAoJCUNDPTEKCQkJQz0zMSAwIDEgMjggMCAxIDAKCQkJQ1BDPTAKCiAqLyB9IApjb25uZWN0aW9ucyA9IFsKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiYWNhNjkwY2ItNjMwNS00YTJmLWJmM2QtNjkxODNhNDkzZGIzIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI2IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMyIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIkNFRDdCQkYzLTBCNDgtNDMzNS1COTMzLTA5NUE0MUNBMDI5NCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMyIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTIiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICI0Q0JCNDQ4MC03OUU4LTRDRTctQUMwRi04QjA5QkFGMTIzOTAiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjMiIAoJCX0gCgkJc2VsZWN0ID0gWyAKCQkJInJnYiIgCgkJCV0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjEzIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiMWVlOWFmMWYtNjVmMi00NzM5LWFkMjgtNWVhNmEwZTY4ZmMzIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjEzIiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIzMCIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjFlZTlhZjFmLTY1ZjItNDczOS1hZDI4LTVlYTZhMGU2OGZjMyIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxOCIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMzAiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICIxZWU5YWYxZi02NWYyLTQ3MzktYWQyOC01ZWE2YTBlNjhmYzMiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTkiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjMwIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiMWVlOWFmMWYtNjVmMi00NzM5LWFkMjgtNWVhNmEwZTY4ZmMzIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI5IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIzMCIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjFlZTlhZjFmLTY1ZjItNDczOS1hZDI4LTVlYTZhMGU2OGZjMyIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxMCIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMzAiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICIxZWU5YWYxZi02NWYyLTQ3MzktYWQyOC01ZWE2YTBlNjhmYzMiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjciIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjMwIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiZjcyNTk3YzQtNzQ4Ny00MTlhLWFmZmItZGY2OTBlNjU4MmUxIiAKCQkJaW5zdGFuY2VfaWQgPSAi",
+ "YWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjMwIiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIzMSIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjA4MDZkYjBkLTJjNGEtNDNjYS05OWNjLWY1YTJmMDM2YThlOCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIzMCIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjkiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICJjNTgyM2M3NS00YWU1LTRjNzEtYjA3MC0zMTVmYTRkMDNlOGUiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjkiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjMyIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiMjQyZDE2NDgtYTYyNi00NDViLTk1MzQtYmNjZWMwOTQxMTJmIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjI5IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiOCIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIkYyRjc0RTU4LTQwMkQtNDcyQi04N0RELTMzMUUwMERCNDE2QyIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMyIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTQiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICJiMWM4NjQwOC1hYWNiLTQ0NjYtYjc1NC1kZGNmMzdhM2EyYzgiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjYiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI0IiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiQ0VEN0JCRjMtMEI0OC00MzM1LUI5MzMtMDk1QTQxQ0EwMjk0IiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI0IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxNSIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjRDQkI0NDgwLTc5RTgtNENFNy1BQzBGLThCMDlCQUYxMjM5MCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNCIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTciIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICJmNzI1OTdjNC03NDg3LTQxOWEtYWZmYi1kZjY5MGU2NTgyZTEiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTciIAoJCX0gCgkJc2VsZWN0ID0gWyAKCQkJInJnYiIgCgkJCV0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjE4IiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiRjJGNzRFNTgtNDAyRC00NzJCLTg3REQtMzMxRTAwREI0MTZDIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI0IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxNiIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gImFkNWUwNTJmLWQzMTYtNGEwZi04Yjc5LTUzYzM4MjA0ZDYxYiIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNiIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjEiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICJDRUQ3QkJGMy0wQjQ4LTQzMzUtQjkzMy0wOTVBNDFDQTAyOTQiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjEiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjIwIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiNENCQjQ0ODAtNzlFOC00Q0U3LUFDMEYtOEIwOUJBRjEyMzkwIiAK",
+ "CQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmIxIiAKCQl9IAoJCXNlbGVjdCA9IFsgCgkJCSJyIiAKCQkJXSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTkiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICJGMkY3NEU1OC00MDJELTQ3MkItODdERC0zMzFFMDBEQjQxNkMiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjEiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjIxIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiMzZiYTQ2ZDItZjZlYS00ZTYwLWE0MjgtZmRjMTdjNzViYzYyIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI2IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNSIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIkNFRDdCQkYzLTBCNDgtNDMzNS1COTMzLTA5NUE0MUNBMDI5NCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNSIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjIiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICI0Q0JCNDQ4MC03OUU4LTRDRTctQUMwRi04QjA5QkFGMTIzOTAiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjUiIAoJCX0gCgkJc2VsZWN0ID0gWyAKCQkJInIiIAoJCQldIAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiOSIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIkYyRjc0RTU4LTQwMkQtNDcyQi04N0RELTMzMUUwMERCNDE2QyIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNSIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjMiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICIxMTY0YTVlZi00NTYzLTQ3OTUtYjNiNS00MjgyNWQ2ZGYwMzciIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjYiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjExIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiYzU4MjNjNzUtNGFlNS00YzcxLWIwNzAtMzE1ZmE0ZDAzZThlIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjExIiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMiIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIkNFRDdCQkYzLTBCNDgtNDMzNS1COTMzLTA5NUE0MUNBMDI5NCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMiIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjUiIAoJCX0gCgl9IAoJeyAKCQlkZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICI0Q0JCNDQ4MC03OUU4LTRDRTctQUMwRi04QjA5QkFGMTIzOTAiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjIiIAoJCX0gCgkJc2VsZWN0ID0gWyAKCQkJInJnYiIgCgkJCV0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjEwIiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiRjJGNzRFNTgtNDAyRC00NzJCLTg3REQtMzMxRTAwREI0MTZDIiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmIyIiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyNCIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjI0MmQxNjQ4LWE2MjYtNDQ1Yi05NTM0LWJjY2VjMDk0MTEyZiIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxMSIgCgkJfSAKCQlzb3VyY2UgPSB7IAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjgiIAoJCX0gCgl9IAoJeyAKCQlk",
+ "ZXN0aW5hdGlvbiA9IHsgCgkJCWNvbm5lY3Rvcl9pZCA9ICI1OWZkMWNmNC1mNzM2LTQ3MGQtODUxMC0xZGQ3YzAxNjYzOWUiIAoJCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjYiIAoJCX0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI3IiAKCQl9IAoJfSAKCXsgCgkJZGVzdGluYXRpb24gPSB7IAoJCQljb25uZWN0b3JfaWQgPSAiQ0VEN0JCRjMtMEI0OC00MzM1LUI5MzMtMDk1QTQxQ0EwMjk0IiAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI3IiAKCQl9IAoJCXNvdXJjZSA9IHsgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyNiIgCgkJfSAKCX0gCgl7IAoJCWRlc3RpbmF0aW9uID0geyAKCQkJY29ubmVjdG9yX2lkID0gIjRDQkI0NDgwLTc5RTgtNENFNy1BQzBGLThCMDlCQUYxMjM5MCIgCgkJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNyIgCgkJfSAKCQlzZWxlY3QgPSBbIAoJCQkiciIgCgkJCV0gCgkJc291cmNlID0geyAKCQkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjI3IiAKCQl9IAoJfSAKXQpjb25zdGFudHMgPSBbCgl7IAoJCWNvbm5lY3Rvcl9pZCA9ICIzOUJDNzYxOS0yNzY4LTQ4MEItQUNGRC02M0ZBNjZFRjY5MDUiIAoJCWlkID0gIjFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMyIgCgkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmIzIiAKCQl2YWx1ZSA9IFsgCgkJCTEuMAoJCV0gCgl9IAoJeyAKCQljb25uZWN0b3JfaWQgPSAiMzlCQzc2MTktMjc2OC00ODBCLUFDRkQtNjNGQTY2RUY2OTA1IiAKCQlpZCA9ICIxYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjQiIAoJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNCIgCgkJdmFsdWUgPSBbIAoJCQkxLjAKCQldIAoJfSAKCXsgCgkJY29ubmVjdG9yX2lkID0gIjM5QkM3NjE5LTI3NjgtNDgwQi1BQ0ZELTYzRkE2NkVGNjkwNSIgCgkJaWQgPSAiMWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmIxIiAKCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjEiIAoJCXZhbHVlID0gWyAKCQkJMS4wCgkJXSAKCX0gCgl7IAoJCWNvbm5lY3Rvcl9pZCA9ICIzOUJDNzYxOS0yNzY4LTQ4MEItQUNGRC02M0ZBNjZFRjY5MDUiIAoJCWlkID0gIjFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNSIgCgkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI1IiAKCQl2YWx1ZSA9IFsgCgkJCTEuMAoJCV0gCgl9IAoJeyAKCQljb25uZWN0b3JfaWQgPSAiMzlCQzc2MTktMjc2OC00ODBCLUFDRkQtNjNGQTY2RUY2OTA1IiAKCQlpZCA9ICIxYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjIiIAoJCWluc3RhbmNlX2lkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiMiIgCgkJdmFsdWUgPSBbIAoJCQkxLjAKCQldIAoJfSAKCXsgCgkJY29ubmVjdG9yX2lkID0gIjM5QkM3NjE5LTI3NjgtNDgwQi1BQ0ZELTYzRkE2NkVGNjkwNSIgCgkJaWQgPSAiMWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI3IiAKCQlpbnN0YW5jZV9pZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjciIAoJCXZhbHVlID0gWyAKCQkJMS4wCgkJXSAKCX0gCgl7IAoJCWNvbm5lY3Rvcl9pZCA9ICJGMkY3NEU1OC00MDJELTQ3MkItODdERC0zMzFFMDBEQjQxNkMiIAoJCWlkID0gIjNiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiNyIgCgkJaW5zdGFuY2VfaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI3IiAKCQl2YWx1ZSA9IFsgCgkJCTEuMAoJCV0gCgl9IApdCm5vZGVzID0gWwoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI2IiAKCQlvcHRpb25zID0gWyAKCQkJIjJiMTM2NDQ3LTY3NmUtNDk0My05OTdiLTA0YTI4YWU2ODQ5NyIKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJMTM2MCAKCQkJMjYwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiU3RhbmRhcmQgQmFzZSIgCgkJdHlwZSA9ICJjb3JlL3N0aW5ncmF5X3JlbmRlcmVyL291dHB1dF9ub2Rlcy9zdGFuZGFyZF9iYXNlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjMiIAoJCW9wdGlvbnMgPSBbIAoJCQkiOUE4NDI4MkItRjFBMi00NkQ0LTlGQzQtNUE3NkZDOUIzMEREIgoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQkxMDIwIAoJCQktMzQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiQ29sb3IgTWFwIFN3aXRjaCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9pZiIgCgl9",
+ "IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCQltYXRlcmlhbF92YXJpYWJsZSA9IHsgCgkJCQlkaXNwbGF5X25hbWUgPSAiVXNlIENvbG9yIE1hcCIgCgkJCQluYW1lID0gInVzZV9jb2xvcl9tYXAiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEgCgkJCQkJbWluID0gMC4wIAoJCQkJCXN0ZXAgPSAxIAoJCQkJCW9yZGVyID0gMTAgCgkJCQkJdWlfdHlwZSA9ICJjaGVja2JveCIgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdCIgCgkJCQl2YWx1ZSA9IDAuMCAKCQkJfSAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxMiIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJLTQwMCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlVzZSBDb2xvciBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxMyIgCgkJb3B0aW9ucyA9IFsgCgkJCSIxZTA2NzQ2NC0xMmQ4LTQ4MjYtOWI3Mi1jZmQ1NzY1MDAzZTMiCgkJCSJmYjNmNzA5Yi1hNTRhLTRlOTMtYWM5Zi1lOWZjNzZmYjhiY2QiCgkJCSI1ZGQ1OWIzZC0xNzYyLTRhMTQtOTkzMC03NTAwMjMwZWYzZGIiCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJLTM0MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQkJdGV4dHVyZV9tYXAgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIkNvbG9yIE1hcCIgCgkJCQlzbG90X25hbWUgPSAiY29sb3JfbWFwIiAKCQkJCXVpID0geyAKCQkJCQlvcmRlciA9IDEgCgkJCQl9IAoJCQl9IAoJCX0gCgkJdGl0bGUgPSAiQ29sb3IgTWFwIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL3NhbXBsZV90ZXh0dXJlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMzAiIAoJCW9wdGlvbnMgPSBbIAoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQkxMjAgCgkJCTQwMCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIkFkZCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9hZGQiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlV2IE9mZnNldCIgCgkJCQluYW1lID0gInV2X29mZnNldCIgCgkJCQl1aSA9IHsgCgkJCQkJbWF4ID0gWyAxMDAwMDEuMCAxMDAwMDEuMCBdIAoJCQkJCW1pbiA9IFsgLTEwMDAwMS4wIC0xMDAwMDEuMCBdIAoJCQkJCXN0ZXAgPSBbIDAuMDEgMC4wMSBdIAoJCQkJCW9yZGVyID0gNjAgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdDIiIAoJCQkJdmFsdWUgPSBbMC4wIDAuMF0gCgkJCX0gCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMzEiIAoJCW9wdGlvbnMgPSBbIAoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQktNjAgCgkJCTM0MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlV2IE9mZnNldCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9tYXRlcmlhbF92YXJpYWJsZSIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjI5IiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJLTYwIAoJCQk0MDAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJfSAKCQl0aXRsZSA9ICJNdWx0aXBseSIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9tdWwiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlV2IFNjYWxlIiAKCQkJCW5hbWUgPSAidXZfc2NhbGUiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IFsgMTAwMDAxLjAgMTAwMDAxLjAgXSAKCQkJCQltaW4gPSBbIC0xMDAwMDEuMCAtMTAwMDAxLjAgXSAKCQkJCQlzdGVwID0gWyAwLjAxIDAuMDEgXSAKCQkJCQlvcmRlciA9IDYxIAoJCQkJfSAKCQkJCXR5cGUgPSAiZmxvYXQyIiAKCQkJCXZhbHVlID0gWzEuMCAxLjBdIAoJCQl9IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjMyIiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJLTI0MCAKCQkJMzQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiVXYgU2NhbGUiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiOCIgCgkJb3B0aW9ucyA9IFsgCgkJXSAK",
+ "CQlwb3NpdGlvbiA9IFsgCgkJCS0yNjAgCgkJCTQyMCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlRleGNvb3JkMCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy90ZXh0dXJlX2Nvb3JkaW5hdGUwIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJCW1hdGVyaWFsX3ZhcmlhYmxlID0geyAKCQkJCWRpc3BsYXlfbmFtZSA9ICJCYXNlIENvbG9yIiAKCQkJCW5hbWUgPSAiYmFzZV9jb2xvciIgCgkJCQl1aSA9IHsgCgkJCQkJbWF4ID0gWyAxLjAgMS4wIDEuMCBdIAoJCQkJCW1pbiA9IFsgMC4wIDAuMCAwLjAgXSAKCQkJCQlzdGVwID0gWyAwLjAxIDAuMDEgMC4wMSBdIAoJCQkJCW9yZGVyID0gMjAgCgkJCQkJdWlfdHlwZSA9ICJjb2xvciIgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdDMiIAoJCQkJdmFsdWUgPSBbMC4zODU2MjEgMC4zODU2MjEgMC4zODU2MjFdIAoJCQl9IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjE0IiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNzAwIAoJCQktMjQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiQmFzZSBDb2xvciIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9tYXRlcmlhbF92YXJpYWJsZSIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI0IiAKCQlvcHRpb25zID0gWyAKCQkJIjlBODQyODJCLUYxQTItNDZENC05RkM0LTVBNzZGQzlCMzBERCIKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJMTAyMCAKCQkJLTYwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiTm9ybWFsIE1hcCBTd2l0Y2giIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvaWYiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlVzZSBOb3JtYWwgTWFwIiAKCQkJCW5hbWUgPSAidXNlX25vcm1hbF9tYXAiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEgCgkJCQkJbWluID0gMC4wIAoJCQkJCXN0ZXAgPSAxIAoJCQkJCW9yZGVyID0gMTEgCgkJCQkJdWlfdHlwZSA9ICJjaGVja2JveCIgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdCIgCgkJCQl2YWx1ZSA9IDEuMCAKCQkJfSAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxNSIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJLTEyMCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlVzZSBOb3JtYWwgTWFwIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL21hdGVyaWFsX3ZhcmlhYmxlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTciIAoJCW9wdGlvbnMgPSBbIAoJCQkiMGEwZmI1YWQtMTQ1ZC00MjI5LWFiZDQtNWIzNjU2MjYwN2IzIgoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQk3NDAgCgkJCS02MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlRhbmdlbnQgVG8gV29ybGQiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvdGFuZ2VudF90b193b3JsZCIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjE4IiAKCQlvcHRpb25zID0gWyAKCQkJIjFlMDY3NDY0LTEyZDgtNDgyNi05YjcyLWNmZDU3NjUwMDNlMyIKCQkJIjkwZTIwODI2LTg2ODktNDJmYS04ZTI0LWY0ODRlYzY0YzVjMyIKCQkJIjVkZDU5YjNkLTE3NjItNGExNC05OTMwLTc1MDAyMzBlZjNkYiIKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNDQwIAoJCQktNjAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJCXRleHR1cmVfbWFwID0geyAKCQkJCWRpc3BsYXlfbmFtZSA9ICJOb3JtYWwgTWFwIiAKCQkJCXNsb3RfbmFtZSA9ICJub3JtYWxfbWFwIiAKCQkJCXVpID0geyAKCQkJCQlvcmRlciA9IDIgCgkJCQl9IAoJCQl9IAoJCX0gCgkJdGl0bGUgPSAiTm9ybWFsIE1hcCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9zYW1wbGVfdGV4dHVyZSIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjE2IiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNjgwIAoJCQk2MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIldvcmxkIE5vcm1hbCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy93b3JsZF9zcGFjZV9ub3JtYWwiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJh",
+ "LWFiYmFhYmJhYWJiMSIgCgkJb3B0aW9ucyA9IFsgCgkJCSI5QTg0MjgyQi1GMUEyLTQ2RDQtOUZDNC01QTc2RkM5QjMwREQiCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTEwMjAgCgkJCTI0MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIk1ldGFsbGljIE1hcCBTd2l0Y2giIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvaWYiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlVzZSBNZXRhbGxpYyBNYXAiIAoJCQkJbmFtZSA9ICJ1c2VfbWV0YWxsaWNfbWFwIiAKCQkJCXVpID0geyAKCQkJCQltYXggPSAxIAoJCQkJCW1pbiA9IDAuMCAKCQkJCQlzdGVwID0gMSAKCQkJCQlvcmRlciA9IDEyIAoJCQkJCXVpX3R5cGUgPSAiY2hlY2tib3giIAoJCQkJfSAKCQkJCXR5cGUgPSAiZmxvYXQiIAoJCQkJdmFsdWUgPSAwLjAgCgkJCX0gCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjAiIAoJCW9wdGlvbnMgPSBbIAoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQk3MDAgCgkJCTE4MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlVzZSBNZXRhbGxpYyBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxOSIgCgkJb3B0aW9ucyA9IFsgCgkJCSJmNjY5YTNhNi0wMzc2LTQxODctODQwZS04MDAwMGUyOTM5ZDUiCgkJCSJlOTRlNTNlNi00OWI2LTQxOTQtYTc0Ny04ZjA2NGE1OTMyZTAiCgkJCSI1ZGQ1OWIzZC0xNzYyLTRhMTQtOTkzMC03NTAwMjMwZWYzZGIiCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJMjQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCQl0ZXh0dXJlX21hcCA9IHsgCgkJCQlkaXNwbGF5X25hbWUgPSAiTWV0YWxsaWMgTWFwIiAKCQkJCXNsb3RfbmFtZSA9ICJtZXRhbGxpY19tYXAiIAoJCQkJdWkgPSB7IAoJCQkJCW9yZGVyID0gMyAKCQkJCX0gCgkJCX0gCgkJfSAKCQl0aXRsZSA9ICJNZXRhbGxpYyBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvc2FtcGxlX3RleHR1cmUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIk1ldGFsbGljIiAKCQkJCW5hbWUgPSAibWV0YWxsaWMiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEuMCAKCQkJCQltaW4gPSAwLjAgCgkJCQkJc3RlcCA9IDAuMDEgCgkJCQkJb3JkZXIgPSAyMSAKCQkJCX0gCgkJCQl0eXBlID0gImZsb2F0IiAKCQkJCXZhbHVlID0gMC4wIAoJCQl9IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjIxIiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNzAwIAoJCQkzNDAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJfSAKCQl0aXRsZSA9ICJNZXRhbGxpYyIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9tYXRlcmlhbF92YXJpYWJsZSIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmI1IiAKCQlvcHRpb25zID0gWyAKCQkJIjlBODQyODJCLUYxQTItNDZENC05RkM0LTVBNzZGQzlCMzBERCIKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJMTAyMCAKCQkJNTQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiUm91Z2huZXNzIE1hcCBTd2l0Y2giIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvaWYiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlVzZSBSb3VnaG5lc3MgTWFwIiAKCQkJCW5hbWUgPSAidXNlX3JvdWdobmVzc19tYXAiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEgCgkJCQkJbWluID0gMC4wIAoJCQkJCXN0ZXAgPSAxIAoJCQkJCW9yZGVyID0gMTMgCgkJCQkJdWlfdHlwZSA9ICJjaGVja2JveCIgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdCIgCgkJCQl2YWx1ZSA9IDEuMCAKCQkJfSAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyMiIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJNDgwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiVXNlIFJvdWdobmVzcyBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWJiOSIgCgkJb3B0aW9ucyA9IFsgCgkJCSIxZTA2NzQ2NC0xMmQ4LTQ4MjYtOWI3Mi1jZmQ1NzY1",
+ "MDAzZTMiCgkJCSJlOTRlNTNlNi00OWI2LTQxOTQtYTc0Ny04ZjA2NGE1OTMyZTAiCgkJCSI1ZGQ1OWIzZC0xNzYyLTRhMTQtOTkzMC03NTAwMjMwZWYzZGIiCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJNTQwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCQl0ZXh0dXJlX21hcCA9IHsgCgkJCQlkaXNwbGF5X25hbWUgPSAiUm91Z2huZXNzIE1hcCIgCgkJCQlzbG90X25hbWUgPSAicm91Z2huZXNzX21hcCIgCgkJCQl1aSA9IHsgCgkJCQkJb3JkZXIgPSA0IAoJCQkJfSAKCQkJfSAKCQl9IAoJCXRpdGxlID0gIlJvdWdobmVzcyBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvc2FtcGxlX3RleHR1cmUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQkJbWF0ZXJpYWxfdmFyaWFibGUgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIlJvdWdobmVzcyIgCgkJCQluYW1lID0gInJvdWdobmVzcyIgCgkJCQl1aSA9IHsgCgkJCQkJbWF4ID0gMS4wIAoJCQkJCW1pbiA9IDAuMCAKCQkJCQlzdGVwID0gMC4wMSAKCQkJCQlvcmRlciA9IDIyIAoJCQkJfSAKCQkJCXR5cGUgPSAiZmxvYXQiIAoJCQkJdmFsdWUgPSAwLjMzIAoJCQl9IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjIzIiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNzAwIAoJCQk2NDAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJfSAKCQl0aXRsZSA9ICJSb3VnaG5lc3MiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIxMSIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTEwMjAgCgkJCTg0MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIk11bHRpcGx5IiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL211bCIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYmIyIiAKCQlvcHRpb25zID0gWyAKCQkJIjlBODQyODJCLUYxQTItNDZENC05RkM0LTVBNzZGQzlCMzBERCIKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNzQwIAoJCQk3ODAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJfSAKCQl0aXRsZSA9ICJFbWlzc2l2ZSBNYXAgU3dpdGNoIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL2lmIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJCW1hdGVyaWFsX3ZhcmlhYmxlID0geyAKCQkJCWRpc3BsYXlfbmFtZSA9ICJVc2UgRW1pc3NpdmUgTWFwIiAKCQkJCW5hbWUgPSAidXNlX2VtaXNzaXZlX21hcCIgCgkJCQl1aSA9IHsgCgkJCQkJbWF4ID0gMSAKCQkJCQltaW4gPSAwLjAgCgkJCQkJc3RlcCA9IDEgCgkJCQkJb3JkZXIgPSAxNCAKCQkJCQl1aV90eXBlID0gImNoZWNrYm94IiAKCQkJCX0gCgkJCQl0eXBlID0gImZsb2F0IiAKCQkJCXZhbHVlID0gMC4wIAoJCQl9IAoJCX0gCgkJaWQgPSAiYWJiYWFiYmEtYWJiYS1hYmJhLWFiYmEtYWJiYWFiYmFhYjI1IiAKCQlvcHRpb25zID0gWyAKCQldIAoJCXBvc2l0aW9uID0gWyAKCQkJNDIwIAoJCQk3MjAgCgkJXSAKCQlzYW1wbGVycyA9IHsgCgkJfSAKCQl0aXRsZSA9ICJVc2UgRW1pc3NpdmUgTWFwIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL21hdGVyaWFsX3ZhcmlhYmxlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMTAiIAoJCW9wdGlvbnMgPSBbIAoJCQkiMWUwNjc0NjQtMTJkOC00ODI2LTliNzItY2ZkNTc2NTAwM2UzIgoJCQkiZmIzZjcwOWItYTU0YS00ZTkzLWFjOWYtZTlmYzc2ZmI4YmNkIgoJCQkiNWRkNTliM2QtMTc2Mi00YTE0LTk5MzAtNzUwMDIzMGVmM2RiIgoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQk0MjAgCgkJCTc4MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQkJdGV4dHVyZV9tYXAgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIkVtaXNzaXZlIE1hcCIgCgkJCQlzbG90X25hbWUgPSAiZW1pc3NpdmVfbWFwIiAKCQkJCXVpID0geyAKCQkJCQlvcmRlciA9IDUgCgkJCQl9IAoJCQl9IAoJCX0gCgkJdGl0bGUgPSAiRW1pc3NpdmUgTWFwIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL3NhbXBsZV90ZXh0dXJlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJCW1hdGVyaWFsX3ZhcmlhYmxlID0geyAKCQkJCWRpc3BsYXlfbmFtZSA9ICJFbWlzc2l2ZSIgCgkJCQluYW1lID0gImVtaXNzaXZlIiAKCQkJCXVpID0geyAKCQkJCQltYXggPSBbIDEuMCAxLjAgMS4wIF0gCgkJCQkJbWluID0gWyAwLjAgMC4wIDAuMCBdIAoJCQkJCXN0ZXAgPSBbIDAuMDEgMC4wMSAwLjAxIF0gCgkJCQkJb3JkZXIgPSAyMyAKCQkJCQl1aV90eXBlID0gImNvbG9y",
+ "IiAKCQkJCX0gCgkJCQl0eXBlID0gImZsb2F0MyIgCgkJCQl2YWx1ZSA9IFswLjAgMC4wIDAuMF0gCgkJCX0gCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiMjQiIAoJCW9wdGlvbnMgPSBbIAoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQk0MjAgCgkJCTg4MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIkVtaXNzaXZlIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL21hdGVyaWFsX3ZhcmlhYmxlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJCW1hdGVyaWFsX3ZhcmlhYmxlID0geyAKCQkJCWRpc3BsYXlfbmFtZSA9ICJFbWlzc2l2ZSBJbnRlbnNpdHkiIAoJCQkJbmFtZSA9ICJlbWlzc2l2ZV9pbnRlbnNpdHkiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEwLjAgCgkJCQkJbWluID0gMC4wIAoJCQkJCXN0ZXAgPSAwLjAxIAoJCQkJCW9yZGVyID0gNTMgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdCIgCgkJCQl2YWx1ZSA9IDAuMCAKCQkJfSAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyOCIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTc0MCAKCQkJOTIwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiRW1pc3NpdmUgSW50ZW5zaXR5IiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL21hdGVyaWFsX3ZhcmlhYmxlIiAKCX0gCgl7IAoJCWNvbnRlbnRfc2l6ZSA9IFsgCgkJCTE2MCAKCQkJMCAKCQldIAoJCWV4cG9ydCA9IHsgCgkJfSAKCQlpZCA9ICJhYmJhYWJiYS1hYmJhLWFiYmEtYWJiYS1hYmJhYWJiYWFiYjciIAoJCW9wdGlvbnMgPSBbIAoJCQkiOUE4NDI4MkItRjFBMi00NkQ0LTlGQzQtNUE3NkZDOUIzMEREIgoJCV0gCgkJcG9zaXRpb24gPSBbIAoJCQkxMDIwIAoJCQkxMTAwIAoJCV0gCgkJc2FtcGxlcnMgPSB7IAoJCX0gCgkJdGl0bGUgPSAiQW8gTWFwIFN3dGljaCIgCgkJdHlwZSA9ICJjb3JlL3NoYWRlcl9ub2Rlcy9pZiIgCgl9IAoJeyAKCQljb250ZW50X3NpemUgPSBbIAoJCQkxNjAgCgkJCTAgCgkJXSAKCQlleHBvcnQgPSB7IAoJCQltYXRlcmlhbF92YXJpYWJsZSA9IHsgCgkJCQlkaXNwbGF5X25hbWUgPSAiVXNlIEFvIE1hcCIgCgkJCQluYW1lID0gInVzZV9hb19tYXAiIAoJCQkJdWkgPSB7IAoJCQkJCW1heCA9IDEgCgkJCQkJbWluID0gMC4wIAoJCQkJCXN0ZXAgPSAxIAoJCQkJCW9yZGVyID0gMTUgCgkJCQkJdWlfdHlwZSA9ICJjaGVja2JveCIgCgkJCQl9IAoJCQkJdHlwZSA9ICJmbG9hdCIgCgkJCQl2YWx1ZSA9IDEuMCAKCQkJfSAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyNiIgCgkJb3B0aW9ucyA9IFsgCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJMTEwMCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQl9IAoJCXRpdGxlID0gIlVzZSBBbyBNYXAiIAoJCXR5cGUgPSAiY29yZS9zaGFkZXJfbm9kZXMvbWF0ZXJpYWxfdmFyaWFibGUiIAoJfSAKCXsgCgkJY29udGVudF9zaXplID0gWyAKCQkJMTYwIAoJCQkwIAoJCV0gCgkJZXhwb3J0ID0geyAKCQl9IAoJCWlkID0gImFiYmFhYmJhLWFiYmEtYWJiYS1hYmJhLWFiYmFhYmJhYWIyNyIgCgkJb3B0aW9ucyA9IFsgCgkJCSJmNjY5YTNhNi0wMzc2LTQxODctODQwZS04MDAwMGUyOTM5ZDUiCgkJCSJlOTRlNTNlNi00OWI2LTQxOTQtYTc0Ny04ZjA2NGE1OTMyZTAiCgkJCSI1ZGQ1OWIzZC0xNzYyLTRhMTQtOTkzMC03NTAwMjMwZWYzZGIiCgkJXSAKCQlwb3NpdGlvbiA9IFsgCgkJCTcwMCAKCQkJMTE2MCAKCQldIAoJCXNhbXBsZXJzID0geyAKCQkJdGV4dHVyZV9tYXAgPSB7IAoJCQkJZGlzcGxheV9uYW1lID0gIkFvIE1hcCIgCgkJCQlzbG90X25hbWUgPSAiYW9fbWFwIiAKCQkJCXVpID0geyAKCQkJCQlvcmRlciA9IDYgCgkJCQl9IAoJCQl9IAoJCX0gCgkJdGl0bGUgPSAiQW8gTWFwIiAKCQl0eXBlID0gImNvcmUvc2hhZGVyX25vZGVzL3NhbXBsZV90ZXh0dXJlIiAKCX0gCl0KdmVyc2lvbiA9IDMKAA=="
+			}
+		}
+	}
+	BindingTable: 1821164379392, "BindingTable::root 28", "" {
+		Version: 100
+		Properties70:  {
+			P: "TargetName", "KString", "", "", "root"
+			P: "TargetType", "KString", "", "", "shader"
+		}
+		Entry: "Maya|use_metallic_map", "FbxPropertyEntry", "use_metallic_map", "FbxSemanticEntry"
+		Entry: "Maya|base_color", "FbxPropertyEntry", "base_color", "FbxSemanticEntry"
+		Entry: "Maya|use_ao_map", "FbxPropertyEntry", "use_ao_map", "FbxSemanticEntry"
+		Entry: "Maya|TEX_emissive_map", "FbxPropertyEntry", "TEX_emissive_map", "FbxSemanticEntry"
+		Entry: "Maya|TEX_metallic_map", "FbxPropertyEntry", "TEX_metallic_map", "FbxSemanticEntry"
+		Entry: "Maya|TEX_ao_map", "FbxPropertyEntry", "TEX_ao_map", "FbxSemanticEntry"
+		Entry: "Maya|uv_offset", "FbxPropertyEntry", "uv_offset", "FbxSemanticEntry"
+		Entry: "Maya|emissive_intensity", "FbxPropertyEntry", "emissive_intensity", "FbxSemanticEntry"
+		Entry: "Maya|metallic", "FbxPropertyEntry", "metallic", "FbxSemanticEntry"
+		Entry: "Maya|TEX_global_specular_cube", "FbxPropertyEntry", "TEX_global_specular_cube", "FbxSemanticEntry"
+		Entry: "Maya|use_roughness_map", "FbxPropertyEntry", "use_roughness_map", "FbxSemanticEntry"
+		Entry: "Maya|use_normal_map", "FbxPropertyEntry", "use_normal_map", "FbxSemanticEntry"
+		Entry: "Maya|use_color_map", "FbxPropertyEntry", "use_color_map", "FbxSemanticEntry"
+		Entry: "Maya|emissive", "FbxPropertyEntry", "emissive", "FbxSemanticEntry"
+		Entry: "Maya|use_emissive_map", "FbxPropertyEntry", "use_emissive_map", "FbxSemanticEntry"
+		Entry: "Maya|uv_scale", "FbxPropertyEntry", "uv_scale", "FbxSemanticEntry"
+		Entry: "Maya|TEX_global_diffuse_cube", "FbxPropertyEntry", "TEX_global_diffuse_cube", "FbxSemanticEntry"
+		Entry: "Maya|TEX_roughness_map", "FbxPropertyEntry", "TEX_roughness_map", "FbxSemanticEntry"
+		Entry: "Maya|roughness", "FbxPropertyEntry", "roughness", "FbxSemanticEntry"
+		Entry: "Maya|TEX_brdf_lut", "FbxPropertyEntry", "TEX_brdf_lut", "FbxSemanticEntry"
+		Entry: "Maya|TEX_color_map", "FbxPropertyEntry", "TEX_color_map", "FbxSemanticEntry"
+		Entry: "Maya|TEX_normal_map", "FbxPropertyEntry", "TEX_normal_map", "FbxSemanticEntry"
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Wall_014, Model::RootNode
+	C: "OO",1821885566976,0
+	
+	;AnimLayer::BaseLayer, AnimStack::Take 001
+	C: "OO",1821174230704,1822930514752
+	
+	;Texture::file1, Material::M_Trim
+	C: "OP",1821182950432,1822925370304, "Maya|TEX_global_diffuse_cube"
+	
+	;Texture::file2, Material::M_Trim
+	C: "OP",1821182965792,1822925370304, "Maya|TEX_global_specular_cube"
+	
+	;Texture::file3, Material::M_Trim
+	C: "OP",1821182950912,1822925370304, "Maya|TEX_brdf_lut"
+	
+	;Texture::Trim_01_1, Material::M_Trim
+	C: "OP",1821182952352,1822925370304, "Maya|TEX_normal_map"
+	
+	;Material::M_Trim, Implementation::M_Trim_Implementation
+	C: "OO",1822925370304,1821176220240
+	
+	;BindingTable::root 28, Implementation::M_Trim_Implementation
+	C: "OO",1821164379392,1821176220240
+	
+	;Video::file2, Texture::file2
+	C: "OO",1822638112752,1821182965792
+	
+	;Video::file1, Texture::file1
+	C: "OO",1822638099152,1821182950432
+	
+	;Video::file3, Texture::file3
+	C: "OO",1822638196752,1821182950912
+	
+	;Video::Trim_01_1, Texture::Trim_01_1
+	C: "OO",1822638291152,1821182952352
+	
+	;Geometry::, Model::Wall_014
+	C: "OO",1821175931520,1821885566976
+	
+	;Material::M_Trim, Model::Wall_014
+	C: "OO",1822925370304,1821885566976
+}

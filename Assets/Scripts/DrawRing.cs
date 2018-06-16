@@ -38,15 +38,16 @@ public class DrawRing : MonoBehaviour {
         torus = Instantiate<GameObject>(torusPrefab, center, Quaternion.identity, gameObject.transform);
         //iTween to 1,1,1 scale to grow out from sphere!
 
-        torusScriptRef = torus.GetComponent<Dest.Modeling.Torus>();
+        
         
 
         iTween.ScaleTo(torus, new Vector3(1f, 1f, 1f), 3f);
         iTween.RotateTo(torus, new Vector3(-90f, 0f, 0f), 3f);
 
 
+        //torusScriptRef = torus.GetComponent<Dest.Modeling.Torus>();
         //these aren't working?
-        torusScriptRef.Thickness = 0.01f;
-        torusScriptRef.Thickness = 0.05f;
+        //torusScriptRef.Thickness = 0.01f;
+        //torusScriptRef.Thickness = 0.05f;
     }
 }

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 33778347694595510}
   - component: {fileID: 23542205331494628}
   m_Layer: 0
-  m_Name: Torus 1
+  m_Name: Torus 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1044161371034936}
-  m_Mesh: {fileID: 4300000, guid: a12a304c23680ec40a0edd29b965d25d, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 4a04f75d8a3f4454fbb0931c44416a32, type: 2}
 --- !u!114 &114792777447637332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42115669eabd53240abbd83770a5af3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeneratedMesh: {fileID: 0}
+  GeneratedMesh: {fileID: 4300000, guid: 4a04f75d8a3f4454fbb0931c44416a32, type: 2}
   Radius: 1
   Thickness: 0.1
   Tessellation: 30

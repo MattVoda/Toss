@@ -5,7 +5,7 @@ namespace Dest.Modeling
 	public class Torus : PrimitiveBase
 	{
 		public float Radius = 1f;
-		public float Thickness = 0.3f;
+		public float Thickness = 0.1f;
 		public int Tessellation = 30;
 		public bool GenerateNormals = true;
 		public bool GenerateUVs = true;

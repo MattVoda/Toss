@@ -5,8 +5,8 @@ using Valve.VR.InteractionSystem;
 
 public class ThrowGrow : MonoBehaviour {
 
-    public Vector3 maxScaleVector = new Vector3(0.25f, 0.25f, 0.25f);
-    public Vector3 minScaleVector = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 maxScaleVector = new Vector3(0.15f, 0.15f, 0.15f);
+    private Vector3 minScaleVector = new Vector3(0.05f, 0.05f, 0.05f);
 
     private float distance;
     private float dampedDistance;

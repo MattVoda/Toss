@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class DrawRing : MonoBehaviour {
 
@@ -16,7 +17,6 @@ public class DrawRing : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         center = transform.position;
-        //Ring();
         Torus();
     }
 	
@@ -26,28 +26,18 @@ public class DrawRing : MonoBehaviour {
         
     }
 
-    void Ring() {
-        ring = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        ring.transform.position = center;
-        ring.transform.localScale = ringScale;
-
-        ringExistant = true;
-    }
-
     void Torus() {
         torus = Instantiate<GameObject>(torusPrefab, center, Quaternion.identity, gameObject.transform);
         //iTween to 1,1,1 scale to grow out from sphere!
 
-        
-        
+        iTween.ScaleTo(torus, new Vector3(0f, 0f, 0f), 0f);
+        iTween.RotateTo(torus, new Vector3(-90f, 0f, 0f), 0f);
+    }
 
-        iTween.ScaleTo(torus, new Vector3(1f, 1f, 1f), 3f);
-        iTween.RotateTo(torus, new Vector3(-90f, 0f, 0f), 3f);
-
-
-        //torusScriptRef = torus.GetComponent<Dest.Modeling.Torus>();
-        //these aren't working?
-        //torusScriptRef.Thickness = 0.01f;
-        //torusScriptRef.Thickness = 0.05f;
+    private void OnAttachedToHand(Hand hand) {
+        iTween.ScaleTo(torus, new Vector3(0f, 0f, 0f), 1f);
+    }
+    private void OnDetachedFromHand(Hand hand) {
+        iTween.ScaleTo(torus, new Vector3(1f, 1f, 1f), 1f);
     }
 }

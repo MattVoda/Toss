@@ -5,7 +5,7 @@ using Valve.VR.InteractionSystem;
 
 public class ThrowGrow : MonoBehaviour {
 
-    private Vector3 maxScaleVector = new Vector3(0.15f, 0.15f, 0.15f);
+    private Vector3 maxScaleVector = new Vector3(0.1f, 0.1f, 0.1f);
     private Vector3 minScaleVector = new Vector3(0.05f, 0.05f, 0.05f);
 
     private float distance;
@@ -27,6 +27,9 @@ public class ThrowGrow : MonoBehaviour {
     public SteamVR_Camera HMD;
     public Material deployedColor;
     private Renderer rend;
+    private GameObject content_sphere;
+    private GameObject sphere_system;
+    //private Valve.VR.InteractionSystem.Hand hand;
 
     private void Awake() {
        startPosition = transform.position;
@@ -34,6 +37,8 @@ public class ThrowGrow : MonoBehaviour {
 
     void Start () {
         rend = GetComponent<Renderer>();
+        content_sphere = gameObject.transform.parent.Find("Content_Sphere").gameObject;
+        sphere_system = gameObject.transform.parent.gameObject;
 	}
 	
 	void Update () {
@@ -42,13 +47,28 @@ public class ThrowGrow : MonoBehaviour {
     }
 
     private void OnDetachedFromHand(Hand hand) {
-        print("thrown!");
+
         iTween.ScaleTo(gameObject, maxScaleVector, tweeningTime);
         rend.material.color = Color.gray;
+        
+        sphere_system.GetComponent<Encircle_Child>().Expand();
+
+        
     }
+
+
     private void OnAttachedToHand(Hand hand) {
-        print("picked up!");
-        iTween.ScaleTo(gameObject, minScaleVector, tweeningTime);
-        rend.material.color = Color.white;
+        
+        if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad)) {
+            print("grip held");
+        } else {
+            print("grip not held");
+        }
+
+        //iTween.ScaleTo(gameObject, minScaleVector, tweeningTime);
+        //rend.material.color = Color.white;
+        
+        //sphere_system.GetComponent<Encircle_Child>().Contract();
     }
+    
 }

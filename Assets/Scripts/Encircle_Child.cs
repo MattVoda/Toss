@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using Valve.VR.InteractionSystem;
 
 public class Encircle_Child : MonoBehaviour
 {
@@ -11,20 +12,22 @@ public class Encircle_Child : MonoBehaviour
     public GameObject selector_sphere;
     public GameObject content_sphere;
     public float startRadius = 0.01f;
-    public float endRadius = 0.3f;
+    public float endRadius = 0.15f;  //of imaginary circle
     public SteamVR_Camera HMD;
 
     private bool attached = true;
-
+    private GameObject[] files;
 
     void Start() {
+        files = new GameObject[numberOfObjects];
+
         content_sphere.transform.localPosition = selector_sphere.transform.localPosition;
         iTween.ScaleTo(content_sphere, new Vector3(startRadius, startRadius, startRadius), 0f);
 
         for (int i = 0; i < numberOfObjects; i++) {
             float angle = i * Mathf.PI * 2 / numberOfObjects;
             Vector3 pos = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * endRadius;
-            Instantiate(prefab, selector_sphere.transform.position + pos, Quaternion.identity, content_sphere.transform);
+            files[i] = Instantiate(prefab, selector_sphere.transform.position + pos, Quaternion.identity, content_sphere.transform);
         }
     }
 
@@ -40,10 +43,22 @@ public class Encircle_Child : MonoBehaviour
     public void Expand() {
         attached = false;
         iTween.ScaleTo(content_sphere, new Vector3(endRadius, endRadius, endRadius), 0.5f);
+        StartCoroutine(WaitToStartInteractivity());
+        ActivateInteractivity();
     }
 
     public void Contract() {
         attached = true;
         iTween.ScaleTo(content_sphere, new Vector3(startRadius, startRadius, startRadius), 0.5f);
+    }
+
+    IEnumerator WaitToStartInteractivity() {
+        yield return new WaitForSecondsRealtime(1);
+    }
+
+    public void ActivateInteractivity() {
+        for (int i = 0; i < numberOfObjects; i++) {
+            files[i].GetComponent<FileResponseToHover>().enabled = true;
+        }
     }
 }

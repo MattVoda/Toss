@@ -22,10 +22,10 @@ public class ThrowGrow : MonoBehaviour {
     private Vector3 startPosition;
 
     [Header("Prefabs")]
-    public GameObject folderPrefab;
-    public GameObject filePrefab;
-    public SteamVR_Camera HMD;
-    public Material deployedColor;
+    //public GameObject folderPrefab;
+    //public GameObject filePrefab;
+    //public SteamVR_Camera HMD;
+    //public Material deployedColor;
     private Renderer rend;
     private GameObject content_sphere;
     private GameObject sphere_system;
@@ -42,7 +42,7 @@ public class ThrowGrow : MonoBehaviour {
 	}
 	
 	void Update () {
-        distance = Vector3.Distance(transform.position, HMD.transform.position);
+        //distance = Vector3.Distance(transform.position, HMD.transform.position);
 
     }
 
@@ -58,17 +58,13 @@ public class ThrowGrow : MonoBehaviour {
 
 
     private void OnAttachedToHand(Hand hand) {
-        
-        if (hand.controller.GetPressDown(Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad)) {
-            print("grip held");
-        } else {
-            print("grip not held");
-        }
 
-        //iTween.ScaleTo(gameObject, minScaleVector, tweeningTime);
-        //rend.material.color = Color.white;
+        hand.HoverUnlock(null); //allows the hand to register hovering with other stuff!
         
-        //sphere_system.GetComponent<Encircle_Child>().Contract();
+        iTween.ScaleTo(gameObject, minScaleVector, tweeningTime);
+        rend.material.color = Color.white;
+        
+        //sphere_system.GetComponent<Encircle_Child>().Contract(); //we want files to stay out for selection
     }
     
 }

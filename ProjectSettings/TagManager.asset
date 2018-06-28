@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - desk clutter
+  - selector
   layers:
   - Default
   - TransparentFX

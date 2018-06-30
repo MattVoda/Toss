@@ -23,11 +23,9 @@ public class FileResponseToHover : MonoBehaviour
 
     private void OnHandHoverBegin(Hand hand) {
         if (hand.currentAttachedObject.tag == "selector") {
-            //print("hovering with sphere!");
-
-            //rend.material.color = Color.red;
-            //anim.Play(allHash);
             anim.SetBool(transitionTriggerBool, true);
+
+            hand.currentAttachedObject.GetComponent<ThrowGrow>().Fade(false, 1f);
         }
     }
 
@@ -39,6 +37,8 @@ public class FileResponseToHover : MonoBehaviour
     private void OnHandHoverEnd(Hand hand) {
         if (hand.currentAttachedObject.tag == "selector") {
             anim.SetBool(transitionTriggerBool, false);
+
+            hand.currentAttachedObject.GetComponent<ThrowGrow>().Fade(true, 1f);
         }
     }
 }

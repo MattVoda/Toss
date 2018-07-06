@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 65652384558244082}
   - component: {fileID: 23610388547265656}
   - component: {fileID: 114801309496757450}
-  - component: {fileID: 114355131439071046}
   - component: {fileID: 95522045860347402}
+  - component: {fileID: 114065384268773012}
   m_Layer: 8
   m_Name: Cube_Kids
   m_TagString: Untagged
@@ -326,7 +326,7 @@ Animator:
   m_GameObject: {fileID: 1068941990032098}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 075f517ea6efba6488b2e82865435b95, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2e6e7731c00fa0c4a8871baffc70ee71, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -334,7 +334,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114355131439071046
+--- !u!114 &114065384268773012
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1068941990032098}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2b3682c289e6e249981f1893b60fa2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe1755f14af95f4587eeb19e4f1dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114801309496757450
@@ -364,7 +364,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1561583305786776}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -377,7 +377,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1147428223544088}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -390,7 +390,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1300032503807914}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1

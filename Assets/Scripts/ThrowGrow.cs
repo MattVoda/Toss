@@ -74,24 +74,14 @@ public class ThrowGrow : MonoBehaviour {
             b = 0.1f;
         }
 
-        //if (!meshRend.enabled)
-        //    meshRend.enabled = true;
-
         Color meshColor = meshRend.material.color;
 
         while (counter < duration) {
             counter += Time.deltaTime;
             float alpha = Mathf.Lerp(a, b, counter / duration);
-            Debug.Log(alpha);
-
             meshRend.material.color = new Color(meshColor.r, meshColor.g, meshColor.b, alpha);
             yield return null;
         }
-
-        //if (!fadeIn) {
-        //    //Disable Mesh Renderer
-        //    meshRend.enabled = false;
-        //}
         fading = false; //So that we can call this function next time
     }
 

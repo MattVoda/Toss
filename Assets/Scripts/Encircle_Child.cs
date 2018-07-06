@@ -7,7 +7,8 @@ public class Encircle_Child : MonoBehaviour
 {
 
     // Instantiates a prefab in a circle around a specific point (shieldGen)
-    public GameObject prefab;
+    public GameObject basecube_prefab;
+    public GameObject kidcube_prefab;
     public int numberOfObjects = 10;
     public GameObject selector_sphere;
     public GameObject content_sphere;
@@ -27,7 +28,7 @@ public class Encircle_Child : MonoBehaviour
         for (int i = 0; i < numberOfObjects; i++) {
             float angle = i * Mathf.PI * 2 / numberOfObjects;
             Vector3 pos = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * endRadius;
-            files[i] = Instantiate(prefab, selector_sphere.transform.position + pos, Quaternion.identity, content_sphere.transform);
+            files[i] = Instantiate(kidcube_prefab, selector_sphere.transform.position + pos, Quaternion.identity, content_sphere.transform);
         }
     }
 
@@ -58,7 +59,7 @@ public class Encircle_Child : MonoBehaviour
 
     public void ActivateInteractivity() {
         for (int i = 0; i < numberOfObjects; i++) {
-            files[i].GetComponent<FileResponseToHover>().enabled = true;
+            files[i].GetComponent<KidResponseToHover>().enabled = true;
         }
     }
 }

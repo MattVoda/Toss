@@ -5,50 +5,84 @@ using Valve.VR.InteractionSystem;
 
 public class ThrowGrow : MonoBehaviour {
 
-    public Vector3 maxScaleVector = new Vector3(0.25f, 0.25f, 0.25f);
-    public Vector3 minScaleVector = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 maxScaleVector = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 minScaleVector = new Vector3(0.05f, 0.05f, 0.05f);
 
-    private float distance;
-    private float dampedDistance;
-    public float distanceDampener = 0.5f;
-    private Vector3 clampedScaleVector;
-
-    private bool popped = false;
+    private bool fading = false;
 
     [Header("Menu Options")]
-    //public float minimumPullDistance = 0.5f; // instantiates and destroy at this distance
     public float tweeningTime = 0.2f;
-    public bool LookAtHMD = false;
-    private Vector3 startPosition;
 
     [Header("Prefabs")]
-    public GameObject folderPrefab;
-    public GameObject filePrefab;
-    public SteamVR_Camera HMD;
-    public Material deployedColor;
     private Renderer rend;
+    private MeshRenderer meshRend;
+    private GameObject content_sphere;
+    private GameObject sphere_system;
 
     private void Awake() {
-       startPosition = transform.position;
+
     }
 
     void Start () {
         rend = GetComponent<Renderer>();
+        meshRend = GetComponent<MeshRenderer>();
+        content_sphere = gameObject.transform.parent.Find("Content_Sphere").gameObject;
+        sphere_system = gameObject.transform.parent.gameObject;
 	}
 	
 	void Update () {
-        distance = Vector3.Distance(transform.position, HMD.transform.position);
-
+        
     }
 
     private void OnDetachedFromHand(Hand hand) {
-        print("thrown!");
         iTween.ScaleTo(gameObject, maxScaleVector, tweeningTime);
         rend.material.color = Color.gray;
+        
+        sphere_system.GetComponent<Encircle_Child>().Expand();
     }
+
+
     private void OnAttachedToHand(Hand hand) {
-        print("picked up!");
+        hand.HoverUnlock(null); //allows the hand to register hovering with other stuff!
+        
         iTween.ScaleTo(gameObject, minScaleVector, tweeningTime);
         rend.material.color = Color.white;
+
     }
+
+
+    public void Fade(bool fadeIn, float duration) {
+        if (fading) {
+            return;
+        }
+        fading = true;
+        
+        StartCoroutine(FadeTo(fadeIn, duration));
+    }
+
+    public IEnumerator FadeTo(bool fadeIn, float duration) {
+        float counter = 0f;
+
+        //Set Values depending on if fadeIn or fadeOut
+        float a, b;
+        if (fadeIn) {
+            a = 0.1f;
+            b = 1;
+        } else {
+            a = 1;
+            b = 0.1f;
+        }
+
+        Color meshColor = meshRend.material.color;
+
+        while (counter < duration) {
+            counter += Time.deltaTime;
+            float alpha = Mathf.Lerp(a, b, counter / duration);
+            meshRend.material.color = new Color(meshColor.r, meshColor.g, meshColor.b, alpha);
+            yield return null;
+        }
+        fading = false; //So that we can call this function next time
+    }
+
+
 }

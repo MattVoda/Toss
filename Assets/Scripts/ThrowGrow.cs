@@ -12,7 +12,6 @@ public class ThrowGrow : MonoBehaviour {
 
     [Header("Menu Options")]
     public float tweeningTime = 0.2f;
-    public bool LookAtHMD = false;
 
     [Header("Prefabs")]
     private Renderer rend;

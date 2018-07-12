@@ -15,6 +15,7 @@ public class Encircle_Child : MonoBehaviour
     public float startRadius = 0.01f;
     public float endRadius = 0.15f;  //of imaginary circle
     public SteamVR_Camera HMD;
+    public bool lookAt = false;
 
     private bool attached = true;
     private GameObject[] files;
@@ -38,7 +39,9 @@ public class Encircle_Child : MonoBehaviour
             content_sphere.transform.position = selector_sphere.transform.position;
         }
         
-        content_sphere.transform.LookAt(HMD.transform);
+        if (lookAt) {
+            content_sphere.transform.LookAt(HMD.transform);
+        }
     }
 
     public void Expand() {

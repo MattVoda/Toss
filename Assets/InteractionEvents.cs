@@ -10,6 +10,8 @@ public class InteractionEvents : MonoBehaviour {
     private Vector3 containingBlockMin;
     private Vector3 containingBlockMax;
     private LinearDrive linearDrive;
+    private bool currentlyFullWidth = false;
+    private Vector3 pinPos;
 
     // Use this for initialization
     void Start () {
@@ -27,8 +29,18 @@ public class InteractionEvents : MonoBehaviour {
     }
 
     private void HandHoverUpdate(Hand hand) {
-        if (hand.GetStandardInteractionButton()) {
-            blockTweening.Expand();
+        if (hand.GetStandardInteractionButton() && !currentlyFullWidth) {
+            pinPos = transform.position;
+            blockTweening.Expand(pinPos);
+            currentlyFullWidth = true;
+        } 
+    }
+
+    private void OnHandHoverEnd(Hand hand) {
+        if (currentlyFullWidth) {
+            pinPos = transform.position;
+            blockTweening.Contract(pinPos);
+            currentlyFullWidth = false;
         }
     }
 

@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 156857708}
   - component: {fileID: 156857709}
   m_Layer: 0
-  m_Name: ContainingBlock
+  m_Name: ContainingBigBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

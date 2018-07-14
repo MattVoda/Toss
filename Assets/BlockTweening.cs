@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlockTweening : MonoBehaviour {
 
-    public float maxWidth = 1f; //block resides in parent with ScaleX=5. So 1=5
+    public float maxWidth = 5f; 
     public GameObject pin; //for getting pin position when collapsing
 
     private Vector3 initialPosition;
@@ -12,8 +12,8 @@ public class BlockTweening : MonoBehaviour {
     private Vector3 initialScale;
     private Vector3 maxScale;
     private float timeScale = 6f;
-    private Vector3 parentScale;
-    private Vector3 parentPosition;
+    //private Vector3 parentScale;
+    //private Vector3 parentPosition;
     private float sliderValue = 50f;
     private float sliderValueMax = 100f;
     private float sliderValueMin = 0f;
@@ -30,8 +30,8 @@ public class BlockTweening : MonoBehaviour {
         initialScale = gameObject.transform.localScale;
         maxScale = new Vector3(maxWidth, initialScale.y, initialScale.z);
 
-        parentPosition = transform.parent.transform.position;
-        parentScale = transform.parent.transform.localScale;
+        //parentPosition = transform.parent.transform.position;
+        //parentScale = transform.parent.transform.localScale;
 
         subtractiveZ = initialSize.z / 2;
         subtractiveY = initialSize.y / 2;
@@ -65,7 +65,7 @@ public class BlockTweening : MonoBehaviour {
         //while (transform.localScale.x < maxWidth) {
         while (progress <= 1) {
             transform.localScale = Vector3.Lerp(initialScale, maxScale, progress);
-            transform.position = Vector3.Lerp(positionBeforeMoving, pinPosition, progress);
+            transform.position = Vector3.Lerp(positionBeforeMoving, initialPosition, progress);
             progress += Time.deltaTime * timeScale;
             yield return null;
         }

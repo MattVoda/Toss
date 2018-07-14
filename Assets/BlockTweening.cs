@@ -30,9 +30,6 @@ public class BlockTweening : MonoBehaviour {
         initialScale = gameObject.transform.localScale;
         maxScale = new Vector3(maxWidth, initialScale.y, initialScale.z);
 
-        //parentPosition = transform.parent.transform.position;
-        //parentScale = transform.parent.transform.localScale;
-
         subtractiveZ = initialSize.z / 2;
         subtractiveY = initialSize.y / 2;
     }
@@ -43,12 +40,6 @@ public class BlockTweening : MonoBehaviour {
 	}
 
     public void Expand(Vector3 pinPosition) {
-        //iTween.ScaleTo(gameObject, iTween.Hash(
-        //     "x", maxWidth,
-        //     "time", .3,
-        //     "easeType", iTween.EaseType.easeOutSine
-        //));
-
         float subPinX = pinPosition.x;
         float subPinY = pinPosition.y - subtractiveY;
         float subPinZ = pinPosition.z + subtractiveZ;
@@ -61,23 +52,17 @@ public class BlockTweening : MonoBehaviour {
 
     IEnumerator ExpandCoroutine(Vector3 pinPosition) {
         float progress = 0;
-
-        //while (transform.localScale.x < maxWidth) {
+        
         while (progress <= 1) {
             transform.localScale = Vector3.Lerp(initialScale, maxScale, progress);
             transform.position = Vector3.Lerp(positionBeforeMoving, initialPosition, progress);
             progress += Time.deltaTime * timeScale;
             yield return null;
         }
-        transform.localScale = maxScale;
+        //transform.localScale = maxScale;
     }
 
     public void Contract(Vector3 pinPosOnRelease) {
-        //iTween.ScaleTo(gameObject, iTween.Hash(
-        //     "x", initialSize.x,
-        //     "time", .3,
-        //     "easeType", iTween.EaseType.easeOutSine
-        //));
 
         float subPinX = pinPosOnRelease.x;
         float subPinY = pinPosOnRelease.y - subtractiveY;
@@ -87,6 +72,11 @@ public class BlockTweening : MonoBehaviour {
         positionBeforeMoving = transform.position;
 
         StartCoroutine(ContractCoroutine(correctedPinPos));
+
+        //if (pinPosOnRelease.x != transform.position.x) {
+            
+        //    StartCoroutine(MovePinToCorrect(pin.transform.position, transform.position));
+        //}
     }
 
     IEnumerator ContractCoroutine(Vector3 pinPos) {
@@ -98,6 +88,17 @@ public class BlockTweening : MonoBehaviour {
             progress += Time.deltaTime * timeScale;
             yield return null;
         }
-        transform.localScale = initialScale;
+        //transform.localScale = initialScale;
+    }
+
+    IEnumerator MovePinToCorrect(Vector3 currentPinPos, Vector3 currentBlockPosition) {
+        float progress = 0;
+
+        while (progress <= .3f) {
+            pin.transform.position = Vector3.Lerp(currentPinPos, new Vector3(currentPinPos.x, currentPinPos.y, currentPinPos.z), progress);
+            progress += Time.deltaTime * timeScale;
+            yield return null;
+        }
+        //transform.localScale = initialScale;
     }
 }

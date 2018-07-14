@@ -18,7 +18,6 @@ public class PositionPin : MonoBehaviour {
     void Start () {
         blockRenderer = block.GetComponent<Renderer>();
         blockSize = blockRenderer.bounds.size;
-        print(blockSize);
 
         FindMidpointOnTopEdge();
 	}

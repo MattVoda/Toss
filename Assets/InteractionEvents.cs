@@ -7,8 +7,7 @@ public class InteractionEvents : MonoBehaviour {
 
     public GameObject block;
     private BlockTweening blockTweening;
-    private Vector3 containingBlockMin;
-    private Vector3 containingBlockMax;
+    private TrackAndDisplayProgress trackAndDisplayProgress;
     private LinearDrive linearDrive;
     private bool currentlyFullWidth = false;
     private Vector3 pinPos;
@@ -16,6 +15,7 @@ public class InteractionEvents : MonoBehaviour {
     // Use this for initialization
     void Start () {
         blockTweening = block.GetComponent<BlockTweening>();
+        trackAndDisplayProgress = GetComponent<TrackAndDisplayProgress>();
         linearDrive = GetComponent<LinearDrive>();
 	}
 	
@@ -33,13 +33,15 @@ public class InteractionEvents : MonoBehaviour {
             pinPos = transform.position;
             blockTweening.Expand(pinPos);
             currentlyFullWidth = true;
-        } 
+        }
+        trackAndDisplayProgress.CalculatePercentage();
     }
 
     private void OnHandHoverEnd(Hand hand) {
         if (currentlyFullWidth) {
             pinPos = transform.position;
             blockTweening.Contract(pinPos);
+            trackAndDisplayProgress.CalculatePercentage();
             currentlyFullWidth = false;
         }
     }

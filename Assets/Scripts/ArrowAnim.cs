@@ -12,9 +12,10 @@ public class ArrowAnim : MonoBehaviour
 
     public Transform startPoint;
     public Transform endPoint;
+    //public GameObject frontPiece;
 
     void Update() {
-        arrowObject.arrowPath.startPoint = startPoint.position;
+        arrowObject.arrowPath.startPoint = startPoint.transform.position;
         arrowObject.arrowPath.endPoint = new Vector3(endPoint.position.x, endPoint.position.y, endPoint.position.z * 10 * Mathf.Abs(Mathf.Sin(fi)));
         arrowObject.updateArrowMesh();
         fi += 1f * Time.deltaTime;

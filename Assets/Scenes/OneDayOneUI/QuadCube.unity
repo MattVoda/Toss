@@ -450,6 +450,10 @@ Prefab:
       propertyPath: enviroCube3
       value: 
       objectReference: {fileID: 1656858782}
+    - target: {fileID: 1199874157340380, guid: 8e14fd3b29be3144bacc74626295d1d1, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e14fd3b29be3144bacc74626295d1d1, type: 2}
   m_IsPrefabParent: 0
